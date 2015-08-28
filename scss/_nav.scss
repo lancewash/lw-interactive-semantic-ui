@@ -1,0 +1,35 @@
+/*
+navigation
+*/
+.brand-top {
+  height: 40%;
+}
+.navbar {
+  float: right;
+
+  ul {
+    display: flex;
+    list-style-type: none;
+  }
+  li {
+     margin-right: 3rem;
+     //margin-right: 0;
+
+     a {
+       color: $colorLink;
+       font-size: .8rem;
+       letter-spacing: 0.1em;
+       text-decoration: none;
+       text-transform: uppercase;
+     }
+   }
+}
+
+
+@media only screen and (max-width: 991px) {
+
+  //.brand-top {
+  //  height: 60%;
+  //}
+
+}

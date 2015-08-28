@@ -1,0 +1,170 @@
+/* =Buttons
+-----------------------------------------------------------------------------*/
+.button {
+    display: inline-block;
+    vertical-align: top;
+
+    font-family: $controlsFontFamily;
+    font-size: $baseFontSize + 0px;
+    font-weight: 400;
+
+    line-height: 1;
+
+    text-align: center;
+    text-decoration: none;
+    color: $colorBody;
+
+    margin: 0;
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+
+    cursor: pointer;
+
+    background: #eeeded;
+    padding: 9px 20px;
+    height: 2.3em;
+
+    &:hover {
+        color: rgba(0, 0, 0, .5);
+        background: #dbdada;
+    }
+}
+input[type="submit"].button {
+    -webkit-appearance: none;
+}
+.button-small {
+    font-size: $buttonsSmallFontSize;
+    padding: 7px 16px;
+}
+.button-outline {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 8px 19px;
+    &.button-small {
+        padding: 6px 15px;
+    }
+}
+
+
+.button-blue,
+.button-red,
+.button-green,
+.button-black {
+    color: #fff;
+    &:hover {
+        color: rgba(255, 255, 255, .7);
+    }
+}
+.button-white {
+    background: #fff;
+    &:hover { background: darken(#fff, 5%); }
+}
+.button-white.button-outline {
+    background: none;
+    border-color: rgba(255, 255, 255, .85);
+    color: rgba(255, 255, 255, .85);
+    &:hover {
+        color: rgba(0, 0, 0, .9);
+        background: #fff;
+    }
+}
+.button-blue {
+    background: $colorBlue;
+    &:hover { background: darken($colorBlue, 10%); }
+}
+.button-red {
+    background: $colorRed;
+    &:hover { background: darken($colorRed, 10%); }
+}
+.button-green {
+    background: $colorGreen;
+    &:hover { background: darken($colorGreen, 10%); }
+}
+.button-yellow {
+    background: $colorYellow;
+    color: #000;
+    &:hover {
+        background: darken($colorYellow, 17%);
+    }
+}
+.button-black {
+    background: #000;
+    &:hover { background: lighten(#000, 20%); }
+}
+
+.button-active,
+.button[disabled],
+.button-disabled {
+    border: none;
+    background: none;
+    background-color: #dbdada;
+    color: rgba(0, 0, 0, .5);
+    &:hover {
+        color: rgba(0, 0, 0, .5);
+    }
+}
+.button-active {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .4) inset;
+}
+.button[disabled],
+.button-disabled {
+    cursor: default;
+    box-shadow: none;
+}
+
+.button-blue.button-active,
+.button-red.button-active,
+.button-green.button-active,
+.button-black.button-active {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .7) inset;
+}
+
+.button-blue.button-active,
+.button-red.button-active,
+.button-green.button-active,
+.button-black.button-active,
+.button-blue.button-disabled,
+.button-red.button-disabled,
+.button-green.button-disabled,
+.button-black.button-disabled,
+.button-blue[disabled],
+.button-red[disabled],
+.button-green[disabled],
+.button-black[disabled] {
+    color: rgba(255, 255, 255, .6);
+    &:hover {
+        color: rgba(255, 255, 255, .6);
+    }
+}
+
+.button-white.button-active,
+.button-white.button-disabled,
+.button-white[disabled] {
+    background: darken(#fff, 5%);
+}
+.button-blue.button-active,
+.button-blue.button-disabled,
+.button-blue[disabled] {
+    background: darken($colorBlue, 10%);
+}
+.button-red.button-active,
+.button-red.button-disabled,
+.button-red[disabled] {
+    background: darken($colorRed, 10%);
+}
+.button-green.button-active,
+.button-green.button-disabled,
+.button-green[disabled] {
+    background: darken($colorGreen, 10%);
+}
+.button-yellow.button-active,
+.button-yellow.button-disabled,
+.button-yellow[disabled] {
+    background: darken($colorYellow, 17%);
+}
+.button-black.button-active,
+.button-black.button-disabled,
+.button-black[disabled] {
+    background: lighten(#000, 30%);
+}
