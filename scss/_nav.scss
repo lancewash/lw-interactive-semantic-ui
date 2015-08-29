@@ -21,6 +21,13 @@ navigation
        letter-spacing: 0.1em;
        text-decoration: none;
        text-transform: uppercase;
+       transition: all .5s ease;
+       -moz-transition: all .5s ease;
+       -webkit-transition: all .5s ease;
+       
+       &:hover {
+         color: rgba(0, 0, 0, 1);
+       }
      }
    }
 }
