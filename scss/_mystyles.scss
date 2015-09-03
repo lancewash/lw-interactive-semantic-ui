@@ -2,8 +2,11 @@
 My Styles
 */
 
+body {
+  background: rgba(0,0,0,.1);
+}
 
-body:before, body:after {
+/*body:before, body:after {
   content: "";
   position: fixed;
   background: rgba(0,0,0,1);
@@ -21,20 +24,24 @@ body {
   background: #000;
   border-left: 3px solid rgba(0,0,0,1);
   border-right: 3px solid rgba(0,0,0,1);
-}
+}*/
 
-.page-wrap {
-  max-width: 110em;
+.page-wrap, main {
+  max-width: 1440px;
   margin: 0 auto;
 }
 
-
+.header-wrap {
+  background: rgba(255,255,255,1);
+  height: 105vh;
+  width: 100%;
+}
 .header-main {
   background: rgba(255,255,255,1);
   height: 105vh;
   margin: 0 auto;
-  max-width: 99.99%;
-  padding: 0 10em 12em;
+
+  padding: 0 6em 12em;
 
   .grid {
     display: -webkit-box;
