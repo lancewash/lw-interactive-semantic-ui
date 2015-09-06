@@ -27,7 +27,7 @@ body {
 }*/
 
 .page-wrap, main {
-  max-width: 1440px;
+  max-width: 1540px;
   margin: 0 auto;
 }
 
@@ -38,10 +38,10 @@ body {
 }
 .header-main {
   background: rgba(255,255,255,1);
-  height: 105vh;
-  margin: 0 auto;
-
-  padding: 0 6em 12em;
+  height: 50vh;
+  min-height: 600px;
+  margin: 0 auto 1em;
+  padding: 0 6em;
 
   .grid {
     display: -webkit-box;
@@ -59,9 +59,11 @@ body {
     //justify-content: center;
   }
 }
-
+.brand-top {
+  height: 200px;
+}
 .heading-top {
-  height: 60%;
+  height: 300px;
 }
 
 .projects {
@@ -119,6 +121,7 @@ body {
     font-size: 1rem;
   }
   .brand-top {
+    height: 50%;
     
     img {
       display: block;
