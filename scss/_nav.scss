@@ -3,20 +3,37 @@ navigation
 */
 
 .navbar {
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
   float: right;
+  padding: .8rem 0 .9rem;
+  transition: all .75s ease;
+  -moz-transition: all .75s ease;
+  -webkit-transition: all .75s ease;
+
+  &:hover {
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    border-top: 1px solid rgba(0,0,0,.05);
+  }
 
   ul {
     display: flex;
     list-style-type: none;
   }
   li {
-     margin-right: 3rem;
+     margin-left: 3rem;
      //margin-right: 0;
+    
+    &:first-child {
+      margin-left: 0;
+    }
 
      a {
        color: $colorLink;
-       font-size: .8rem;
-       letter-spacing: 0.1em;
+       font-size: .75rem;
+       font-weight: 800;
+       letter-spacing: 0.25em;
+       padding: 1rem 0;
        text-decoration: none;
        text-transform: uppercase;
        transition: all .5s ease;
@@ -25,9 +42,18 @@ navigation
        
        &:hover {
          color: rgba(0, 0, 0, 1);
+         
        }
      }
    }
+  &:hover a {
+
+    opacity: .5;
+    
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 

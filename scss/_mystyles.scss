@@ -64,6 +64,19 @@ body {
 }
 .heading-top {
   height: 300px;
+
+  h1 {
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, .8);
+    line-height: 2.5rem;
+  }
+  p {
+    font-family: 'merriweather_lightregular';
+    font-size: 1.25rem;
+    margin-top: .25rem;
+    line-height: 2.25rem;
+  }
 }
 
 .projects {
