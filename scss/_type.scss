@@ -1,7 +1,7 @@
 
 
 body {
-  color: rgba(113, 109, 103, 0.75);
+  color: $colorBody;
   font-family: 'montserratregular';
 }
 h1 {
@@ -10,7 +10,7 @@ h1 {
   line-height: 1.6em;
 }
 h1, h2, h3 {
-  //color: #716D67;
+  //color: $colorHeadings;
   font-family: 'merriweather_lightregular';
   font-weight: 100;
  

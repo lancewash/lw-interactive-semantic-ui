@@ -252,7 +252,7 @@ audio {
 }
 
 body {
-  color: rgba(113, 109, 103, 0.75);
+  color: rgba(0, 0, 0, 0.5);
   font-family: 'montserratregular';
 }
 
@@ -330,8 +330,8 @@ navigation
 }
 
 .navbar:hover {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #faf8f4;
+  border-top: 1px solid #faf8f4;
 }
 
 .navbar ul {
@@ -348,10 +348,10 @@ navigation
 }
 
 .navbar li a {
-  color: rgba(113, 109, 103, 0.5);
+  color: black;
   font-size: .75rem;
   font-weight: 800;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.15em;
   padding: 1rem 0;
   text-decoration: none;
   text-transform: uppercase;
@@ -361,11 +361,12 @@ navigation
 }
 
 .navbar li a:hover {
-  color: black;
+  color: #b69853;
 }
 
 .navbar:hover a {
-  opacity: .5;
+  color: #b69853;
+  opacity: .25;
 }
 
 .navbar:hover a:hover {
@@ -1574,7 +1575,7 @@ navigation
 My Styles
 */
 body {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(204, 204, 204, 0.5);
 }
 
 /*body:before, body:after {
@@ -1597,7 +1598,7 @@ body {
   border-right: 3px solid rgba(0,0,0,1);
 }*/
 .page-wrap, main {
-  max-width: 1540px;
+  max-width: 1560px;
   margin: 0 auto;
 }
 
@@ -1609,10 +1610,15 @@ body {
 
 .header-main {
   background: white;
+  border-bottom: rgba(0, 0, 0, 0.025);
   height: 50vh;
   min-height: 600px;
   margin: 0 auto 1em;
   padding: 0 6em;
+}
+
+.header-main h1 {
+  color: #B69853;
 }
 
 .header-main .grid {
@@ -1635,27 +1641,64 @@ body {
 }
 
 .heading-top h1 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 300;
-  color: rgba(0, 0, 0, 0.8);
   line-height: 2.5rem;
 }
 
 .heading-top p {
   font-family: 'merriweather_lightregular';
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   margin-top: .25rem;
-  line-height: 2.25rem;
+  line-height: 2rem;
 }
 
 .projects .ui.grid {
-  margin-bottom: -1.4em;
+  margin-bottom: -1.2em;
   margin-left: 0;
   margin-right: 0;
 }
 
 .projects .column {
   padding: 0 !important;
+}
+
+.project-title {
+  font-size: 18px;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+.project-title h2 {
+  font-family: 'montserratregular';
+  font-weight: 800;
+}
+
+.project-item {
+  background: white;
+  align-items: center !important;
+  justify-content: center;
+  text-align: center;
+}
+
+.project-item.fabc {
+  background: #3c0308;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.project-item.gs {
+  background: #455a64;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.project-item.sii {
+  background: #2FADD5;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.project-item.mc {
+  background: #323232;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 @media only screen and (max-width: 991px) {

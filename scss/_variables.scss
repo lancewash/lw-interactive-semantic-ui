@@ -7,8 +7,10 @@ $mainNavFontFamily: 'montserratregular';
 
 // Base color
 $backgroundBody: #fff;
-$colorBody: #c3c1bd;
-$colorHeadings: #716D67;
+$colorBody: rgba(0,0,0,.5);
+$colorHeadings: rgba(182,152,83,1);
+$colorHighlight: rgba(182,152,83,1);
+
 
 // Grid
 $gridWidth: 1000;
@@ -22,7 +24,7 @@ $baseLineInEms: $baseLine / $baseFontSize;
 
 // Heading
 $h1FontSize: $baseFontSize + 22px; // 36px
-$h2FontSize: $baseFontSize + 16px; // 30px
+$h2FontSize: $baseFontSize + 14px; // 30px
 $h3FontSize: $baseFontSize + 10px; // 24px
 $h4FontSize: $baseFontSize + 4px; // 18px
 $h5FontSize: $baseFontSize + 0px; // 14px
@@ -50,8 +52,8 @@ $colorGreen: #159776;
 $colorYellow: #fddc43;
 
 // LinkColor
-$colorLink: rgba(113,109,103,.5);
-$colorLinkHover: #FABD05;
+$colorLink: rgba(0,0,0,1);
+$colorLinkHover: rgba(182,152,83,1);
 
 // Forms
 $fieldsBottom: 1.6em;

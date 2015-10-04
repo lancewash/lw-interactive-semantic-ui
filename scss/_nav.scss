@@ -12,8 +12,8 @@ navigation
   -webkit-transition: all .75s ease;
 
   &:hover {
-    border-bottom: 1px solid rgba(0,0,0,.05);
-    border-top: 1px solid rgba(0,0,0,.05);
+    border-bottom: 1px solid lighten($colorLinkHover, 45%);
+    border-top: 1px solid lighten($colorLinkHover, 45%);
   }
 
   ul {
@@ -32,7 +32,7 @@ navigation
        color: $colorLink;
        font-size: .75rem;
        font-weight: 800;
-       letter-spacing: 0.25em;
+       letter-spacing: 0.15em;
        padding: 1rem 0;
        text-decoration: none;
        text-transform: uppercase;
@@ -41,14 +41,14 @@ navigation
        -webkit-transition: all .5s ease;
        
        &:hover {
-         color: rgba(0, 0, 0, 1);
+         color: $colorLinkHover;
          
        }
      }
    }
   &:hover a {
-
-    opacity: .5;
+    color: $colorLinkHover;
+    opacity: .25;
     
     &:hover {
       opacity: 1;
