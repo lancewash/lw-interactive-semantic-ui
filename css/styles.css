@@ -1576,6 +1576,7 @@ My Styles
 */
 body {
   background: rgba(204, 204, 204, 0.5);
+  overflow-x: hidden;
 }
 
 /*body:before, body:after {
@@ -1644,6 +1645,56 @@ body {
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 2.5rem;
+  /*&::before {
+      border-bottom: 1px solid rgba(0,0,0,.1);
+      top: -10px;
+      content: "";
+      display: block;
+      height: 1px;
+      /!* left: 45%; *!/
+      left: 1rem;
+      position: absolute;
+      width: 50px;
+    }
+    &::after {
+      border-bottom: 1px solid rgba(0,0,0,.1);
+      bottom: -10px;
+      content: "";
+      display: block;
+      height: 1px;
+      /!* left: 45%; *!/
+      left: 1rem;
+      position: absolute;
+      width: 50px;
+    }*/
+}
+
+.heading-top h1::before {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  top: -20px;
+  content: "";
+  display: block;
+  height: 1px;
+  /* left: 45%; */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+  width: 80px;
+}
+
+.heading-top h1::after {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  bottom: -20px;
+  content: "";
+  display: block;
+  height: 1px;
+  /* left: 45%; */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+  width: 80px;
 }
 
 .heading-top p {
@@ -1664,14 +1715,37 @@ body {
 }
 
 .project-title {
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: .15em;
   text-transform: uppercase;
 }
 
-.project-title h2 {
-  font-family: 'montserratregular';
-  font-weight: 800;
+.project-title h2::before {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  top: -1em;
+  content: "";
+  display: block;
+  height: 1px;
+  margin: 0 auto;
+  /* left: 45%; */
+  right: 0;
+  left: 0;
+  position: absolute;
+  width: 50px;
+}
+
+.project-title h2::after {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  bottom: -1em;
+  content: "";
+  display: block;
+  height: 1px;
+  margin: 0 auto;
+  /* left: 45%; */
+  right: 0;
+  left: 0;
+  position: absolute;
+  width: 50px;
 }
 
 .project-item {
@@ -1681,24 +1755,54 @@ body {
   text-align: center;
 }
 
+.project-item a {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  padding: 1rem 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 45%;
+  width: 300px;
+  display: none;
+}
+
+.project-item img {
+  position: relative;
+}
+
+.project-item:hover a {
+  display: block;
+  color: #000;
+  background: white;
+}
+
 .project-item.fabc {
   background: #3c0308;
-  color: rgba(255, 255, 255, 0.85);
+  color: white;
 }
 
 .project-item.gs {
   background: #455a64;
-  color: rgba(255, 255, 255, 0.85);
+  color: white;
 }
 
 .project-item.sii {
   background: #2FADD5;
-  color: rgba(255, 255, 255, 0.85);
+  color: white;
 }
 
 .project-item.mc {
   background: #323232;
-  color: rgba(255, 255, 255, 0.85);
+  color: white;
+}
+
+.project-item.lw {
+  background: #B69853;
+  color: white;
 }
 
 @media only screen and (max-width: 991px) {

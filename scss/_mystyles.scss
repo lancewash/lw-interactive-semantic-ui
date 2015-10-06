@@ -4,6 +4,7 @@ My Styles
 
 body {
   background: lighten($colorBody, 80%);
+  overflow-x: hidden;
 }
 
 /*body:before, body:after {
@@ -30,7 +31,9 @@ body {
   max-width: 1560px;
   margin: 0 auto;
 }
-
+//.page-wrap {
+//  margin-bottom: 200px;
+//}
 .header-wrap {
   background: rgba(255,255,255,1);
   height: 105vh;
@@ -81,6 +84,56 @@ body {
     font-weight: 300;
     //color: rgba(182,152,83,1);
     line-height: 2.5rem;
+
+    &::before {
+      border-bottom: 1px solid rgba(0,0,0,.1);
+      top: -20px;
+      content: "";
+      display: block;
+      height: 1px;
+      /* left: 45%; */
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      position: absolute;
+      width: 80px;
+    }
+    &::after {
+      border-bottom: 1px solid rgba(0,0,0,.1);
+      bottom: -20px;
+      content: "";
+      display: block;
+      height: 1px;
+      /* left: 45%; */
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      position: absolute;
+      width: 80px;
+    }
+
+    /*&::before {
+      border-bottom: 1px solid rgba(0,0,0,.1);
+      top: -10px;
+      content: "";
+      display: block;
+      height: 1px;
+      /!* left: 45%; *!/
+      left: 1rem;
+      position: absolute;
+      width: 50px;
+    }
+    &::after {
+      border-bottom: 1px solid rgba(0,0,0,.1);
+      bottom: -10px;
+      content: "";
+      display: block;
+      height: 1px;
+      /!* left: 45%; *!/
+      left: 1rem;
+      position: absolute;
+      width: 50px;
+    }*/
   }
   p {
     font-family: 'merriweather_lightregular';
@@ -102,14 +155,42 @@ body {
   }
  }
 .project-title {
-  font-size: $h2FontSize - 16px;
+  font-size: $h2FontSize - 18px;
   letter-spacing: .15em;
   text-transform: uppercase;
   
   h2 {
-    font-family: 'montserratregular';
+    //font-family: 'montserratregular';
     //font-size: 2rem;
-    font-weight: 800;
+    //font-weight: 800;
+
+    &::before {
+      border-bottom: 1px solid rgba(255,255,255,.25);
+      top: -1em;
+      content: "";
+      display: block;
+      height: 1px;
+      margin: 0 auto;
+      /* left: 45%; */
+      right: 0;
+      left: 0;
+      position: absolute;
+      width: 50px;
+    }
+
+    &::after {
+      border-bottom: 1px solid rgba(255,255,255,.25);
+      bottom: -1em;
+      content: "";
+      display: block;
+      height: 1px;
+      margin: 0 auto;
+      /* left: 45%; */
+      right: 0;
+      left: 0;
+      position: absolute;
+      width: 50px;
+    }
   }
 }
 .project-item {
@@ -117,25 +198,53 @@ body {
   align-items: center !important;
   justify-content: center;
   text-align: center;
-  
+
+
+  a {
+    border: 1px solid rgba(255,255,255,.5);
+    color: rgba(255, 255, 255, 1);
+    padding: 1rem 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    top: 45%;
+    width: 300px;
+    display: none;
+  }
+  img {
+    position: relative;
+
+  }
+  &:hover a {
+    display: block;
+    color: #000;
+    background: rgba(255,255,255,1);
+
+  }
   &.fabc {
     background: #3c0308;
-    color: rgba(255,255,255,.85);
+    color: rgba(255,255,255,1);
   }
   &.gs {
     background: #455a64;
-    color: rgba(255,255,255,.85);
+    color: rgba(255,255,255,1);
   }
   &.sii {
     background: #2FADD5;
-    color: rgba(255,255,255,.85);
+    color: rgba(255,255,255,1);
   }
   &.mc {
     background: #323232;
-    color: rgba(255,255,255,.85);
+    color: rgba(255,255,255,1);
+  }
+  &.lw {
+    background: #B69853;
+    color: rgba(255,255,255,1);
   }
 }
-
 
 
 @media only screen and (max-width: 991px) {
