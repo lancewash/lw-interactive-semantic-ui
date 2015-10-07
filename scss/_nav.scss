@@ -11,21 +11,29 @@ navigation
   -moz-transition: all .75s ease;
   -webkit-transition: all .75s ease;
 
-  &:hover {
-    border-bottom: 1px solid lighten($colorLinkHover, 45%);
-    border-top: 1px solid lighten($colorLinkHover, 45%);
-  }
+  //&:hover {
+  //  border-bottom: 1px solid lighten($colorLinkHover, 45%);
+  //  border-top: 1px solid lighten($colorLinkHover, 45%);
+  //}
 
   ul {
     display: flex;
     list-style-type: none;
   }
   li {
+     line-height: 1.5;
      margin-left: 3rem;
      //margin-right: 0;
     
     &:first-child {
       margin-left: 0;
+    }
+    
+    &.button {
+      
+      &:last-of-type {
+        margin-left: .25em;
+      }
     }
 
      a {
