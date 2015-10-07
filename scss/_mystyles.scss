@@ -146,7 +146,7 @@ body {
 .projects {
   
   .ui.grid {
-    margin-bottom: -1.2em;
+    margin-bottom: -1.25em;
     margin-left: 0;
     margin-right: 0;
   }
@@ -201,27 +201,77 @@ body {
 
 
   a {
-    border: 1px solid rgba(255,255,255,.5);
-    color: rgba(255, 255, 255, 1);
+    //border: 1px solid rgba(255,255,255,.5);
+    color: #B69853;
     padding: 1rem 0;
+    display: block;
     position: absolute;
     left: 0;
     right: 0;
     margin: 0 auto;
     text-decoration: none;
     text-transform: uppercase;
-    top: 45%;
-    width: 300px;
-    display: none;
+    top: 5%;
+    bottom: 5%;
+    height: 90%;
+    width: 94%;
+    opacity: 0;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    
+    img {
+      position: absolute;
+      top: 25%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
   }
   img {
     position: relative;
-
   }
   &:hover a {
-    display: block;
-    color: #000;
-    background: rgba(255,255,255,1);
+    color: #B69853;
+    opacity: 1;
+    //background: url("../img/sweet-it-is-logo.png") 50% 50% no-repeat rgba(255,255,255,1);
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    
+    //img {
+    //  position: relative;
+    //  top: 20%;
+    //}
+    
+    &:hover {
+      background: rgba(255,255,255,.25);
+      color: rgba(0,0,0,.75);
+    }
+    span {
+      background: rgba(255, 255, 255, .5);
+      display: block;
+      padding: 1em 0;
+      position: absolute;
+
+      bottom: 25%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 300px;
+      
+      &:hover {
+        background: rgba(255, 255, 255, .8);-webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+      }
+    }
 
   }
   &.fabc {

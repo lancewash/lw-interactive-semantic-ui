@@ -1705,7 +1705,7 @@ body {
 }
 
 .projects .ui.grid {
-  margin-bottom: -1.2em;
+  margin-bottom: -1.25em;
   margin-left: 0;
   margin-right: 0;
 }
@@ -1756,18 +1756,33 @@ body {
 }
 
 .project-item a {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  color: white;
+  color: #B69853;
   padding: 1rem 0;
+  display: block;
   position: absolute;
   left: 0;
   right: 0;
   margin: 0 auto;
   text-decoration: none;
   text-transform: uppercase;
-  top: 45%;
-  width: 300px;
-  display: none;
+  top: 5%;
+  bottom: 5%;
+  height: 90%;
+  width: 94%;
+  opacity: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.project-item a img {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 .project-item img {
@@ -1775,9 +1790,39 @@ body {
 }
 
 .project-item:hover a {
+  color: #B69853;
+  opacity: 1;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.project-item:hover a:hover {
+  background: rgba(255, 255, 255, 0.25);
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.project-item:hover a span {
+  background: rgba(255, 255, 255, 0.5);
   display: block;
-  color: #000;
-  background: white;
+  padding: 1em 0;
+  position: absolute;
+  bottom: 25%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.project-item:hover a span:hover {
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .project-item.fabc {
