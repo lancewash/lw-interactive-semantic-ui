@@ -202,7 +202,7 @@ body {
 
   a {
     //border: 1px solid rgba(255,255,255,.5);
-    color: #B69853;
+    color: rgba(182,152,83,1);
     padding: 1rem 0;
     display: block;
     position: absolute;
@@ -234,7 +234,7 @@ body {
     position: relative;
   }
   &:hover a {
-    color: #B69853;
+    color: rgba(182,152,83,1);
     opacity: 1;
     //background: url("../img/sweet-it-is-logo.png") 50% 50% no-repeat rgba(255,255,255,1);
     -webkit-transition: all 1s ease-in-out;
@@ -242,37 +242,40 @@ body {
     -ms-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
-    
+
     //img {
     //  position: relative;
     //  top: 20%;
     //}
-    
+
+  }
+  span {
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(182,152,83,.25);
+    display: block;
+    padding: 1em 0;
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 300px;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+
     &:hover {
-      background: rgba(255,255,255,.25);
-      color: rgba(0,0,0,.75);
+      background: rgba(255, 255, 255, 1);
+      border-color: rgba(0,0,0,.25);
+      color: rgba(0,0,0,.5);
+      -webkit-transition: all 1s ease-in-out;
+      -moz-transition: all .25s ease-in-out;
+      -ms-transition: all .25s ease-in-out;
+      -o-transition: all .25s ease-in-out;
+      transition: all .25s ease-in-out;
     }
-    span {
-      background: rgba(255, 255, 255, .5);
-      display: block;
-      padding: 1em 0;
-      position: absolute;
-
-      bottom: 25%;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      width: 300px;
-      
-      &:hover {
-        background: rgba(255, 255, 255, .8);-webkit-transition: all 1s ease-in-out;
-        -moz-transition: all 1s ease-in-out;
-        -ms-transition: all 1s ease-in-out;
-        -o-transition: all 1s ease-in-out;
-        transition: all 1s ease-in-out;
-      }
-    }
-
   }
   &.fabc {
     background: #3c0308;
@@ -291,7 +294,7 @@ body {
     color: rgba(255,255,255,1);
   }
   &.lw {
-    background: #B69853;
+    background: rgba(182,152,83,1);
     color: rgba(255,255,255,1);
   }
 }
