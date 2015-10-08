@@ -5,6 +5,25 @@ My Styles
 body {
   background: lighten($colorBody, 80%);
   overflow-x: hidden;
+  
+  &:before {
+    content: "";
+    position: fixed;
+    background: url("../img/top-border.jpg") top center no-repeat;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 2px;
+  }
+  &:after {
+    content: "";
+    position: fixed;
+    background: url("../img/top-border.jpg") top center no-repeat;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+  }
 }
 
 /*body:before, body:after {
@@ -43,7 +62,7 @@ body {
   background: rgba(255,255,255,1);
   border-bottom: rgba(0, 0, 0,.025);
   height: 50vh;
-  min-height: 800px;
+  min-height: 700px;
   margin: 0 auto 1em;
   padding: 0 6em;
   
@@ -74,10 +93,11 @@ body {
 }
 
 .brand-top {
-  height: 200px;
+  height: 150px;
 }
 .heading-top {
-  height: 400px;
+  height: 420px;
+  margin-top: 0 !important;
 
   h1 {
     font-size: 1.5rem;
@@ -270,7 +290,7 @@ body {
       background: rgba(255, 255, 255, 1);
       border-color: rgba(0,0,0,.25);
       color: rgba(0,0,0,.5);
-      -webkit-transition: all 1s ease-in-out;
+      -webkit-transition: all .25s ease-in-out;
       -moz-transition: all .25s ease-in-out;
       -ms-transition: all .25s ease-in-out;
       -o-transition: all .25s ease-in-out;
