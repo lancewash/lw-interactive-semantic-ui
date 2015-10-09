@@ -6220,6 +6220,7 @@ body {
 
 .subpage .heading-top.sii {
   background: #2FADD5;
+  background: url("../img/sii-header.jpg") 50% 50% no-repeat;
   color: rgba(255, 255, 255, 0.8);
 }
 
