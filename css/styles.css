@@ -6161,7 +6161,7 @@ body {
 }
 
 .subpage .header-main {
-  height: 444px;
+  height: 644px;
 }
 
 .header-main:before {
@@ -6210,38 +6210,63 @@ body {
 }
 
 .heading-top {
-  height: 420px;
+  height: 440px;
   margin-top: 0 !important;
 }
 
 .subpage .heading-top {
-  height: 310px;
+  height: 510px;
 }
 
-.subpage .heading-top.sii {
-  background: #2FADD5;
-  background: url("../img/sii-header.jpg") 50% 50% no-repeat;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.subpage .heading-top.sii h1 {
+.subpage .heading-top.subpage-banner h1 {
   color: white;
 }
 
-.subpage .heading-top.sii h1::before {
+.subpage .heading-top.subpage-banner h1::before {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   border: none;
 }
 
-.subpage .heading-top.sii h1::after {
+.subpage .heading-top.subpage-banner h1::after {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   border: none;
+}
+
+.subpage .heading-top.sii {
+  background: url("../img/sii-header.jpg") 50% 50% no-repeat;
+  background: #2FADD5;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.subpage .heading-top.gs {
+  background: url("../img/gs-header.jpg") 50% 50% no-repeat;
+  background: #455a64;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.subpage .heading-top.fabc {
+  background: url("../img/fabc-header.jpg") 50% 50% no-repeat;
+  background: #3c0308;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.subpage .heading-top.mc {
+  background: url("../img/mc-header.jpg") 50% 50% no-repeat;
+  background: #323232;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.subpage .heading-top.lw {
+  background: url("../img/lw-header.jpg") 50% 50% no-repeat;
+  background: #b69853;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .heading-top h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 300;
-  line-height: 2.5rem;
+  line-height: 3rem;
+  margin-bottom: .5rem;
   /*&::before {
       border-bottom: 1px solid rgba(0,0,0,.1);
       top: -10px;
@@ -6296,9 +6321,9 @@ body {
 
 .heading-top p {
   font-family: 'merriweather_lightregular';
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   margin-top: .25rem;
-  line-height: 2rem;
+  line-height: 2.25rem;
 }
 
 .projects {
