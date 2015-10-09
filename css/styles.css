@@ -6166,6 +6166,8 @@ body {
   left: 0;
   right: 0;
   top: 0;
+  margin: 0 auto;
+  min-width: 1560px;
   height: 2px;
   z-index: 999999;
 }
@@ -6177,6 +6179,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+  margin: 0 auto;
+  min-width: 1560px;
   height: 2px;
   z-index: 999999;
 }
@@ -6273,13 +6277,12 @@ body {
 }
 
 .projects .ui.grid {
-  margin-bottom: -1.25em;
+  margin-bottom: -1.1em;
   margin-left: 0;
   margin-right: 0;
 }
 
 .projects .column {
-  margin-bottom: 2px;
   padding: 0 !important;
 }
 
@@ -6359,7 +6362,7 @@ body {
 }
 
 .project-item img {
-  margin-bottom: -1px;
+  margin-bottom: -2px;
   position: relative;
 }
 
