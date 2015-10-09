@@ -92,18 +92,13 @@
 
 .icon-close {
   position: absolute;
-  //padding: 1rem;
   top: 40px;
   right: 40px;
-  -webkit-transition: all .25s ease-in-out;
-  -moz-transition: all .25s ease-in-out;
-  -ms-transition: all .25s ease-in-out;
-  -o-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out;
 }
 
 .icon-close:hover {
-  background: rgba(255,255,255,.1);
+
+
 }
 
 /* Styles for dummy content */
@@ -138,6 +133,16 @@
   line-height: 3;
   width: 90px;
   border: 1px solid rgba(255,255,255,.25);
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -ms-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+
+  &:hover {
+    background: rgba(255,255,255,.1);
+    border-color: rgba(255,255,255,.75)
+  }
 }
 
 .content-style-overlay .icon-close:hover {
@@ -619,6 +624,9 @@
       transition: all .25s ease-in-out;
       cursor: zoom-in;
     }
+  &.active {
+    background: rgba(182, 152, 83, 1);
+  }
   //&:hover {
   //  //color: rgba(255,255,255,1);
   //  //background: rgba(182,152,83,1);

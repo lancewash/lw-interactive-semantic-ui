@@ -6,24 +6,7 @@ body {
   background: lighten($colorBody, 80%);
   overflow-x: hidden;
   
-  &:before {
-    content: "";
-    position: fixed;
-    background: url("../img/top-border.jpg") top center no-repeat;
-    left: 0;
-    right: 0;
-    top: 0;
-    height: 2px;
-  }
-  &:after {
-    content: "";
-    position: fixed;
-    background: url("../img/top-border.jpg") top center no-repeat;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 2px;
-  }
+
 }
 
 /*body:before, body:after {
@@ -62,9 +45,30 @@ body {
   background: rgba(255,255,255,1);
   border-bottom: rgba(0, 0, 0,.025);
   height: 50vh;
-  min-height: 700px;
+  height: 700px;
   margin: 0 auto 1em;
   padding: 0 6em;
+
+  &:before {
+    content: "";
+    position: fixed;
+    background: url("../img/top-border.jpg") top center no-repeat;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 2px;
+    z-index: 999999;
+  }
+  &:after {
+    content: "";
+    position: fixed;
+    background: url("../img/top-border.jpg") top center no-repeat;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    z-index: 999999;
+  }
   
   h1 {
     color: #B69853;
@@ -84,6 +88,10 @@ body {
     //-webkit-justify-content: center;
     //-ms-flex-pack: center;
     //justify-content: center;
+  }
+  
+  .subpage & {
+    height: 550px;
   }
 }
 .ui.grid > [class*="equal width"].row > .column, 
@@ -171,6 +179,7 @@ body {
     margin-right: 0;
   }
   .column {
+    margin-bottom: 2px;
     padding: 0 !important;
   }
  }
@@ -218,6 +227,10 @@ body {
   align-items: center !important;
   justify-content: center;
   text-align: center;
+  
+  .subpage & {
+    padding: 10em 0 !important;
+  }
 
 
   a {
@@ -251,6 +264,7 @@ body {
     }
   }
   img {
+    margin-bottom: -1px;
     position: relative;
   }
   &:hover a {

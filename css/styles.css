@@ -3657,15 +3657,6 @@ i.icon.bed:before {
   position: absolute;
   top: 40px;
   right: 40px;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-}
-
-.icon-close:hover {
-  background: rgba(255, 255, 255, 0.1);
 }
 
 /* Styles for dummy content */
@@ -3696,6 +3687,16 @@ i.icon.bed:before {
   line-height: 3;
   width: 90px;
   border: 1px solid rgba(255, 255, 255, 0.25);
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.content-style-overlay .icon-close:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.75);
 }
 
 /* Style for text modal */
@@ -4143,6 +4144,10 @@ i.icon.bed:before {
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   cursor: zoom-in;
+}
+
+.morph-button > button.active {
+  background: #b69853;
 }
 
 .morph-button.open > button {
@@ -6115,26 +6120,6 @@ body {
   overflow-x: hidden;
 }
 
-body:before {
-  content: "";
-  position: fixed;
-  background: url("../img/top-border.jpg") top center no-repeat;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 2px;
-}
-
-body:after {
-  content: "";
-  position: fixed;
-  background: url("../img/top-border.jpg") top center no-repeat;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 2px;
-}
-
 /*body:before, body:after {
   content: "";
   position: fixed;
@@ -6169,9 +6154,31 @@ body {
   background: white;
   border-bottom: rgba(0, 0, 0, 0.025);
   height: 50vh;
-  min-height: 700px;
+  height: 700px;
   margin: 0 auto 1em;
   padding: 0 6em;
+}
+
+.header-main:before {
+  content: "";
+  position: fixed;
+  background: url("../img/top-border.jpg") top center no-repeat;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 2px;
+  z-index: 999999;
+}
+
+.header-main:after {
+  content: "";
+  position: fixed;
+  background: url("../img/top-border.jpg") top center no-repeat;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  z-index: 999999;
 }
 
 .header-main h1 {
@@ -6187,6 +6194,10 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.subpage .header-main {
+  height: 550px;
 }
 
 .brand-top {
@@ -6268,6 +6279,7 @@ body {
 }
 
 .projects .column {
+  margin-bottom: 2px;
   padding: 0 !important;
 }
 
@@ -6312,6 +6324,10 @@ body {
   text-align: center;
 }
 
+.subpage .project-item {
+  padding: 10em 0 !important;
+}
+
 .project-item a {
   color: #b69853;
   padding: 1rem 0;
@@ -6343,6 +6359,7 @@ body {
 }
 
 .project-item img {
+  margin-bottom: -1px;
   position: relative;
 }
 
