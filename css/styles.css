@@ -6140,6 +6140,7 @@ body {
   border-right: 3px solid rgba(0,0,0,1);
 }*/
 .page-wrap, main {
+  background: white;
   max-width: 1560px;
   margin: 0 auto;
 }
@@ -6156,7 +6157,11 @@ body {
   height: 50vh;
   height: 700px;
   margin: 0 auto 1em;
-  padding: 0 6em;
+  padding: 0 4em;
+}
+
+.subpage .header-main {
+  height: 444px;
 }
 
 .header-main:before {
@@ -6167,7 +6172,7 @@ body {
   right: 0;
   top: 0;
   margin: 0 auto;
-  min-width: 1560px;
+  max-width: 1560px;
   height: 2px;
   z-index: 999999;
 }
@@ -6180,7 +6185,7 @@ body {
   right: 0;
   bottom: 0;
   margin: 0 auto;
-  min-width: 1560px;
+  max-width: 1560px;
   height: 2px;
   z-index: 999999;
 }
@@ -6200,10 +6205,6 @@ body {
   align-items: center;
 }
 
-.subpage .header-main {
-  height: 550px;
-}
-
 .brand-top {
   height: 150px;
 }
@@ -6211,6 +6212,29 @@ body {
 .heading-top {
   height: 420px;
   margin-top: 0 !important;
+}
+
+.subpage .heading-top {
+  height: 310px;
+}
+
+.subpage .heading-top.sii {
+  background: #2FADD5;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.subpage .heading-top.sii h1 {
+  color: white;
+}
+
+.subpage .heading-top.sii h1::before {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border: none;
+}
+
+.subpage .heading-top.sii h1::after {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border: none;
 }
 
 .heading-top h1 {
@@ -6276,6 +6300,10 @@ body {
   line-height: 2rem;
 }
 
+.projects {
+  padding: 0 3rem;
+}
+
 .projects .ui.grid {
   margin-bottom: -1.1em;
   margin-left: 0;
@@ -6286,10 +6314,23 @@ body {
   padding: 0 !important;
 }
 
+.project-details {
+  background: white;
+  text-transform: none;
+}
+
 .project-title {
   font-size: 16px;
   letter-spacing: .15em;
   text-transform: uppercase;
+}
+
+.subpage .project-title {
+  font-family: "merriweather_lightregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: .75rem;
+  line-height: 2;
+  padding: 6em !important;
+  text-align: left;
 }
 
 .project-title h2::before {
@@ -6327,10 +6368,6 @@ body {
   text-align: center;
 }
 
-.subpage .project-item {
-  padding: 10em 0 !important;
-}
-
 .project-item a {
   color: #b69853;
   padding: 1rem 0;
@@ -6362,7 +6399,7 @@ body {
 }
 
 .project-item img {
-  margin-bottom: -2px;
+  margin-bottom: -3px;
   position: relative;
 }
 

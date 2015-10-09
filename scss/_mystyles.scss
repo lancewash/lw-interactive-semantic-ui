@@ -30,6 +30,7 @@ body {
 }*/
 
 .page-wrap, main {
+  background: rgba(255,255,255,1);
   max-width: 1560px;
   margin: 0 auto;
 }
@@ -47,7 +48,11 @@ body {
   height: 50vh;
   height: 700px;
   margin: 0 auto 1em;
-  padding: 0 6em;
+  padding: 0 4em;
+
+  .subpage & {
+    height: 444px;
+  }
 
   &:before {
     content: "";
@@ -57,7 +62,7 @@ body {
     right: 0;
     top: 0;
     margin: 0 auto;
-    min-width: 1560px;
+    max-width: 1560px;
     height: 2px;
     z-index: 999999;
   }
@@ -69,7 +74,7 @@ body {
     right: 0;
     bottom: 0;
     margin: 0 auto;
-    min-width: 1560px;
+    max-width: 1560px;
     height: 2px;
     z-index: 999999;
   }
@@ -94,9 +99,7 @@ body {
     //justify-content: center;
   }
   
-  .subpage & {
-    height: 550px;
-  }
+
 }
 .ui.grid > [class*="equal width"].row > .column, 
 .ui[class*="equal width"].grid > .column:not(.row), 
@@ -110,6 +113,49 @@ body {
 .heading-top {
   height: 420px;
   margin-top: 0 !important;
+  
+  .subpage & {
+    height: 310px;
+
+    &.sii {
+      background: #2FADD5;
+      color: rgba(255,255,255,.8);
+      
+      h1 {
+        color: rgba(255,255,255,1);
+
+        &::before {
+          border-bottom: 1px solid rgba(255,255,255,.5);
+          border: none;
+          //top: -20px;
+          //content: "";
+          //display: block;
+          //height: 1px;
+          ///* left: 45%; */
+          //left: 0;
+          //right: 0;
+          //margin: 0 auto;
+          //position: absolute;
+          //width: 80px;
+        }
+        &::after {
+          border-bottom: 1px solid rgba(255,255,255,.5);
+          border: none;
+          //bottom: -20px;
+          //content: "";
+          //display: block;
+          //height: 1px;
+          ///* left: 45%; */
+          //left: 0;
+          //right: 0;
+          //margin: 0 auto;
+          //position: absolute;
+          //width: 80px;
+        }
+
+      }
+    }
+  }
 
   h1 {
     font-size: 1.5rem;
@@ -176,6 +222,7 @@ body {
 }
 
 .projects {
+  padding: 0 3rem;
   
   .ui.grid {
     margin-bottom: -1.1em;
@@ -187,10 +234,24 @@ body {
     padding: 0 !important;
   }
  }
+
+.project-details {
+  background: rgba(255,255,255,1);
+  text-transform: none;
+}
+
 .project-title {
   font-size: $h2FontSize - 18px;
   letter-spacing: .15em;
   text-transform: uppercase;
+
+  .subpage & {
+    font-family: $baseFontFamily;
+    font-size: .75rem;
+    line-height: 2;
+    padding: 6em !important;
+    text-align: left;
+  }
   
   h2 {
     //font-family: 'montserratregular';
@@ -232,9 +293,9 @@ body {
   justify-content: center;
   text-align: center;
   
-  .subpage & {
-    padding: 10em 0 !important;
-  }
+  //.subpage & {
+  //  padding: 6em !important;
+  //}
 
 
   a {
@@ -268,7 +329,7 @@ body {
     }
   }
   img {
-    margin-bottom: -2px;
+    margin-bottom: -3px;
     position: relative;
   }
   &:hover a {
