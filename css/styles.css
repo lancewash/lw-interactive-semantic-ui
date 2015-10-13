@@ -6116,7 +6116,7 @@ navigation
 My Styles
 */
 body {
-  background: rgba(204, 204, 204, 0.5);
+  background: rgba(191, 191, 191, 0.5);
   overflow-x: hidden;
 }
 
@@ -6327,7 +6327,7 @@ body {
 }
 
 .projects {
-  padding: 0 3rem;
+  background: white;
 }
 
 .projects .ui.grid {
@@ -6343,6 +6343,10 @@ body {
 .project-details {
   background: white;
   text-transform: none;
+}
+
+.subpage .project-details {
+  background: transparent;
 }
 
 .project-title {
@@ -6389,6 +6393,7 @@ body {
 
 .project-item {
   background: white;
+  border-top: 1px solid #fff;
   align-items: center !important;
   justify-content: center;
   text-align: center;
@@ -6425,7 +6430,7 @@ body {
 }
 
 .project-item img {
-  margin-bottom: -3px;
+  margin-bottom: -2px;
   position: relative;
 }
 
@@ -6489,8 +6494,31 @@ body {
 }
 
 .project-item.lw {
-  background: #b69853;
+  background: #fff;
   color: white;
+}
+
+.project-item.lw h2 {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.project-item.lw h2::before {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+}
+
+.project-item.lw h2::after {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+}
+
+.column-left {
+  border-right: 1px solid white;
+  margin-right: -2px;
+}
+
+.column-right {
+  background-clip: content-box;
+  border-left: 1px solid white;
+  margin-bottom: 1px;
 }
 
 @media only screen and (max-width: 991px) {

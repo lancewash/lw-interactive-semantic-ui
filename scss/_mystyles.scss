@@ -3,7 +3,7 @@ My Styles
 */
 
 body {
-  background: lighten($colorBody, 80%);
+  background: lighten($colorBody, 75%);
   overflow-x: hidden;
   
 
@@ -243,7 +243,8 @@ body {
 }
 
 .projects {
-  padding: 0 3rem;
+  //padding: 0 1px;
+  background: rgba(255,255,255,1);
   
   .ui.grid {
     margin-bottom: -1.1em;
@@ -259,6 +260,11 @@ body {
 .project-details {
   background: rgba(255,255,255,1);
   text-transform: none;
+  
+  .subpage & {
+    background: transparent;
+    //overflow: hidden;
+  }
 }
 
 .project-title {
@@ -310,6 +316,7 @@ body {
 }
 .project-item {
   background: rgba(255,255,255,1);
+  border-top: 1px solid #fff;
   align-items: center !important;
   justify-content: center;
   text-align: center;
@@ -350,7 +357,7 @@ body {
     }
   }
   img {
-    margin-bottom: -3px;
+    margin-bottom: -2px;
     position: relative;
   }
   &:hover a {
@@ -399,27 +406,63 @@ body {
   }
   &.fabc {
     background: #3c0308;
+    //background: #fff;
     color: rgba(255,255,255,1);
+    //color: rgba(0,0,0,.75);
+    
+    //.column-left {
+    //  background: url("../img/projects/fabc.jpg") no-repeat top left;
+    //}
   }
   &.gs {
     background: #455a64;
+    //background: #fff;
     color: rgba(255,255,255,1);
+    //color: rgba(0,0,0,.75);
   }
   &.sii {
     background: #2FADD5;
+    //background: #fff;
     color: rgba(255,255,255,1);
+    //color: rgba(0,0,0,.75);
   }
   &.mc {
     background: #323232;
+    //background: rgba(0,0,0,1);
+    //background: #fff;
     color: rgba(255,255,255,1);
+    //color: rgba(0,0,0,.75);
   }
   &.lw {
-    background: rgba(182,152,83,1);
+    //background: rgba(182,152,83,1);
+    //background: rgba(238, 238, 238, 1);
+    background: #fff;
     color: rgba(255,255,255,1);
+    
+    h2 {
+      color: rgba(0,0,0,.75);
+
+      &::before {
+        border-bottom: 1px solid rgba(0,0,0,.075);
+      }
+
+      &::after {
+        border-bottom: 1px solid rgba(0,0,0,.075);
+      }
+    }
   }
 }
 
+.column-left {
+  border-right: 1px solid rgba(255, 255, 255, 1);
+  margin-right: -2px;
+}
 
+.column-right {
+  background-clip: content-box;
+  border-left: 1px solid rgba(255,255,255,1);
+  margin-bottom: 1px;
+}
 @media only screen and (max-width: 991px) {
 
   .header-main {
