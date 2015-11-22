@@ -147,20 +147,20 @@ body {
 
     &.sii {
       background: url("../img/sii-header.jpg") 50% 50% no-repeat;
-      background: #2FADD5;
+      //background: #2FADD5;
       color: rgba(255,255,255,.8);
     }
 
     &.gs {
       background: url("../img/gs-header.jpg") 50% 50% no-repeat;
-      background: #455a64;
+      //background: #455a64;
       color: rgba(255,255,255,.8);
 
     }
 
     &.fabc {
       background: url("../img/fabc-header.jpg") 50% 50% no-repeat;
-      background: #3c0308;
+      //background: #3c0308;
       color: rgba(255,255,255,.8);
     }
 
@@ -350,7 +350,7 @@ body {
     
     img {
       position: absolute;
-      top: 25%;
+      top: 30%;
       left: 0;
       right: 0;
       margin: 0 auto;

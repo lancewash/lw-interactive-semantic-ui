@@ -14,15 +14,15 @@
     Plugin.prototype = {
         globals: {
             pluginName: "fadeThis",
-            bufferTime: 100,
+            bufferTime: 0,
         },
         defaults: {
             baseName:       "slide-",
-            speed:          1000,
+            speed:          1500,
             easing:         "swing",
             offset:         0,
             reverse:        false,
-            distance:       200,
+            distance:       100,
             scrolledIn:     null,
             scrolledOut:    null
         },
