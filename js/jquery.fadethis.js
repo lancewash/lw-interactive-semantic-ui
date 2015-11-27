@@ -18,7 +18,7 @@
         },
         defaults: {
             baseName:       "slide-",
-            speed:          1500,
+            speed:          1250,
             easing:         "swing",
             offset:         0,
             reverse:        false,

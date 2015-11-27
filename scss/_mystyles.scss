@@ -45,9 +45,10 @@ body {
 .header-main {
   background: rgba(255,255,255,1);
   border-bottom: rgba(0, 0, 0,.025);
-  height: 50vh;
-  height: 700px;
-  margin: 0 auto 1em;
+  //height: 50vh;
+  //height: 700px;
+  height:100vh;
+  margin: 0 auto 2em;
   padding: 0 4em;
 
   .subpage & {
@@ -97,6 +98,12 @@ body {
     //-webkit-justify-content: center;
     //-ms-flex-pack: center;
     //justify-content: center;
+
+    &.profile-wrap {
+      height: 25vh;
+      max-width: 660px;
+      margin: 0 auto;
+    }
   }
   
 
@@ -112,6 +119,7 @@ body {
 }
 .heading-top {
   height: 440px;
+  height: 50%;
   margin-top: 0 !important;
   
   .subpage & {
@@ -376,7 +384,7 @@ body {
     //}
 
   }
-  span {
+  /*span {
     background: rgba(255, 255, 255, 1);
     border: 1px solid rgba(182,152,83,.25);
     display: block;
@@ -403,7 +411,7 @@ body {
       -o-transition: all .25s ease-in-out;
       transition: all .25s ease-in-out;
     }
-  }
+  }*/
   &.fabc {
     background: #3c0308;
     //background: #fff;
