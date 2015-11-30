@@ -6133,7 +6133,7 @@ navigation
 .cd-image-container {
   position: relative;
   width: 100%;
-  max-width: 1040px;
+  max-width: 1260px;
   margin: 4em auto;
 }
 
@@ -6314,13 +6314,14 @@ body {
 .header-main {
   background: white;
   border-bottom: rgba(0, 0, 0, 0.025);
-  height: 100vh;
+  height: 700px;
   margin: 0 auto 2em;
   padding: 0 4em;
 }
 
 .subpage .header-main {
   height: 644px;
+  margin-bottom: 0;
 }
 
 .header-main:before {
@@ -6366,6 +6367,7 @@ body {
 
 .header-main .grid.profile-wrap {
   height: 25vh;
+  height: 50px;
   max-width: 660px;
   margin: 0 auto;
 }
@@ -6376,7 +6378,6 @@ body {
 
 .heading-top {
   height: 440px;
-  height: 50%;
   margin-top: 0 !important;
 }
 
@@ -6555,7 +6556,7 @@ body {
 }
 
 .project-item {
-  background: white;
+  background: #716E68;
   border-top: 1px solid #fff;
   -webkit-box-align: center !important;
   -webkit-align-items: center !important;
@@ -6565,6 +6566,8 @@ body {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-left: 3em !important;
+  margin-right: 3em !important;
   text-align: center;
   /*span {
     background: rgba(255, 255, 255, 1);
@@ -6670,6 +6673,12 @@ body {
 
 .project-item.lw h2::after {
   border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+}
+
+.project-item h2 {
+  color: white;
+  margin: 4rem 0 0;
+  font-size: 1.75rem;
 }
 
 .column-left {
