@@ -6316,7 +6316,7 @@ body {
 .header-main {
   background: white;
   border-bottom: rgba(0, 0, 0, 0.025);
-  height: 900px;
+  height: 800px;
   margin: 0 auto 2em;
 }
 
@@ -6382,7 +6382,7 @@ body {
 }
 
 .subpage .heading-top {
-  height: 510px;
+  height: 480px;
 }
 
 .subpage .heading-top.subpage-banner h1 {
@@ -6724,7 +6724,7 @@ body {
     margin: 0 auto;
   }
   .heading-top {
-    height: 400px;
+    height: 440px;
     padding: 0 4rem !important;
   }
   .heading-top h1 {
