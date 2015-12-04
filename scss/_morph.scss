@@ -660,22 +660,30 @@
 }
 
 .morph-button-fixed > button {
+  border: 1px solid rgba(0,0,0,.1);
   font-family: $mainNavFontFamily;
   font-size: $superSmallFontSize;
   z-index: 1000;
   width: 100%;
   height: 100%;
-  -webkit-transition: opacity 0.5s ease .5s;
-  transition: opacity 0.5s ease .5s;
+  //-webkit-transition: opacity 0.5s ease .5s;
+  //transition: opacity 0.5s ease .5s;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .morph-button-fixed.open > button {
+
   opacity: 0;
   -webkit-transition: opacity 0.25s;
   transition: opacity 0.25s;
 }
 
 .morph-button-fixed .morph-content {
+
   position: fixed;
   z-index: 900;
   opacity: 0;
@@ -704,6 +712,7 @@
 }
 
 .morph-button-fixed.active > button {
+  border: 1px solid rgba(0,0,0,.1);
   z-index: 2000;
 }
 

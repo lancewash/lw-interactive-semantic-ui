@@ -3,7 +3,7 @@ My Styles
 */
 
 body {
-  background: lighten($colorBody, 75%);
+  background: lighten($colorBody, 90%);
   overflow-x: hidden;
   
 
@@ -31,7 +31,7 @@ body {
 
 .page-wrap, main {
   background: rgba(255,255,255,1);
-  max-width: 1560px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 //.page-wrap {
@@ -46,46 +46,43 @@ body {
   background: rgba(255,255,255,1);
   border-bottom: rgba(0, 0, 0,.025);
   //height: 50vh;
-  height: 700px;
+  height: 900px;
   //height:90vh;
   margin: 0 auto 2em;
-  padding: 0 4em;
+  //padding: 0 4em;
 
   .subpage & {
     height: 644px;
     margin-bottom: 0;
   }
-
-  &:before {
+  &:before, &:after {
     content: "";
     position: fixed;
     background: url("../img/top-border.jpg") top center no-repeat;
     left: 0;
     right: 0;
-    top: 0;
     margin: 0 auto;
-    max-width: 1560px;
+    max-width: 1440px;
     height: 2px;
     z-index: 999999;
   }
+  &:before {
+    top: 0;
+
+  }
   &:after {
-    content: "";
-    position: fixed;
-    background: url("../img/top-border.jpg") top center no-repeat;
-    left: 0;
-    right: 0;
     bottom: 0;
-    margin: 0 auto;
-    max-width: 1560px;
-    height: 2px;
-    z-index: 999999;
   }
   
   h1 {
     color: #B69853;
   }
-
+  .brand-top {
+    max-width: 80em;
+  }
   .grid {
+    margin: 0 auto;
+    //max-width: 80em;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -120,7 +117,7 @@ body {
   height: 150px;
 }
 .heading-top {
-  height: 440px;
+  height: 480px;
   //height: 40vh;
   margin-top: 0 !important;
   
@@ -325,12 +322,12 @@ body {
   }
 }
 .project-item {
-  background: #716E68;
+  background: rgba(255,255,255,1);
   border-top: 1px solid #fff;
   align-items: center !important;
   justify-content: center;
-  margin-left: 3em !important;
-  margin-right: 3em !important;
+  //margin-left: 3em !important;
+  //margin-right: 3em !important;
   text-align: center;
   
   //.subpage & {
@@ -388,7 +385,7 @@ body {
     //}
 
   }
-  /*span {
+  span {
     background: rgba(255, 255, 255, 1);
     border: 1px solid rgba(182,152,83,.25);
     display: block;
@@ -415,7 +412,7 @@ body {
       -o-transition: all .25s ease-in-out;
       transition: all .25s ease-in-out;
     }
-  }*/
+  }
   &.fabc {
     background: #3c0308;
     //background: #fff;
@@ -465,9 +462,9 @@ body {
   }
 
   h2 {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(0,0,0, 1);
     margin: 4rem 0 0;
-    font-size: 1.75rem;
+    //font-size: 2rem;
   }
 }
 
@@ -484,6 +481,7 @@ body {
 @media only screen and (max-width: 991px) {
 
   .header-main {
+    height: 600px;
     padding-top: 3em;
     padding-bottom: 2em;
     padding-left: 2em;
@@ -503,10 +501,14 @@ body {
 
     ul {
       display: block;
+      margin: 0 auto;
+      max-width: 300px;
       text-align: center;
     }
     li {
+      float: left;
       margin: 0;
+      width: 50%;
     }
     a {
       display: block;
@@ -520,7 +522,7 @@ body {
     font-size: 1rem;
   }
   .brand-top {
-    height: 50%;
+    height: 130px;
     
     img {
       display: block;
@@ -528,9 +530,23 @@ body {
     }
   }
 
-  //.heading-top {
-  //  height: 40%;
-  //}
+  .heading-top {
+    height: 400px;
+    padding: 0 4rem !important;
+    
+    h1 {
+      font-size: 1.25rem;
+      line-height: 2rem;
+    }
+    
+    p {
+      font-size: 1rem;
+      line-height: 2rem;
+    }
+  }
+  .morph-button-fixed, .morph-button-fixed .morph-content {
+    width: 150px;
+  }
 
   .ui.column.grid > [class*="eight wide"].column,
   .ui.grid > .column.row > [class*="eight wide"].column,
@@ -573,6 +589,9 @@ body {
     color: rgba(255, 255, 255, 1);
     margin: 0 auto 1px;
     max-width: 160px;
+  }
+  .morph-button-fixed, .morph-button-fixed .morph-content {
+    width: 150px;
   }
 
 }
