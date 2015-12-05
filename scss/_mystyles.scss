@@ -51,7 +51,7 @@ body {
 
 .page-wrap, main {
   background: rgba(255,255,255,1);
-  max-width: 1680px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 //.page-wrap {
@@ -274,7 +274,7 @@ body {
   background: rgba(255,255,255,1);
   
   .ui.grid {
-    margin-bottom: -1.1em;
+    margin-bottom: -1.05em;
     margin-left: 0;
     margin-right: 0;
   }
@@ -437,6 +437,7 @@ body {
     background: #3c0308;
     //background: #fff;
     color: rgba(255,255,255,1);
+    margin-bottom: -1em !important;
     //color: rgba(0,0,0,.75);
     
     //.column-left {
@@ -453,6 +454,7 @@ body {
     background: #2FADD5;
     //background: #fff;
     color: rgba(255,255,255,1);
+    margin-bottom: -1.1em !important;
     //color: rgba(0,0,0,.75);
   }
   &.mc {

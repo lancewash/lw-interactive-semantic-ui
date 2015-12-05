@@ -6337,7 +6337,7 @@ body {
 }*/
 .page-wrap, main {
   background: white;
-  max-width: 1680px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -6529,7 +6529,7 @@ body {
 }
 
 .projects .ui.grid {
-  margin-bottom: -1.1em;
+  margin-bottom: -1.05em;
   margin-left: 0;
   margin-right: 0;
 }
@@ -6667,6 +6667,7 @@ body {
 .project-item.fabc {
   background: #3c0308;
   color: white;
+  margin-bottom: -1em !important;
 }
 
 .project-item.gs {
@@ -6677,6 +6678,7 @@ body {
 .project-item.sii {
   background: #2FADD5;
   color: white;
+  margin-bottom: -1.1em !important;
 }
 
 .project-item.mc {
