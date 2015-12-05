@@ -595,7 +595,6 @@
   //padding: 0 1em;
   //border: 1px solid rgba(182, 152, 83, 1);
   //background: rgba(182,152,83,1);
-  border: 1px solid #fff;
   background: rgba(255, 255, 255, 1);
   color: rgba(255,255,255,.9);
   color: rgba(0,0,0,.75);
@@ -610,7 +609,8 @@
     &:hover, &:active {
       background: rgba(182, 152, 83, 1);
       background: rgba(182, 152, 83, 1);
-      border: 1px solid #fff;
+      background: rgba(113, 109, 103, 1);
+      border: 1px solid #000;
       color: rgba(255,255,255, 1);
       -webkit-transition: all .25s ease-in-out;
       -moz-transition: all .25s ease-in-out;
@@ -621,7 +621,8 @@
     }
   &.active, &:active {
     background: rgba(182, 152, 83, 1);
-    border: 1px solid #fff;
+    background: rgba(113, 109, 103, 1);
+    border: 1px solid #000;
   }
   //&:hover {
   //  //color: rgba(255,255,255,1);
@@ -641,7 +642,6 @@
 
 .morph-button.open > button {
   pointer-events: none;
-
 }
 
 .morph-content {
@@ -742,11 +742,11 @@
 
 .morph-button-overlay .morph-content {
   overflow: hidden;
-  background: rgba(182,152,83,1);
+  background: rgba(113, 109, 103, 1);
   //background: rgba(255, 255, 255, 1);
   color: rgba(255,255,255,.9);
   //color: rgba(0, 0, 0, .75);
-  border: 1px solid rgba(0,0,0,.1);
+  border: 1px solid rgba(113, 109, 103, 1);
 }
 
 .morph-button-overlay.open .morph-content {
@@ -813,13 +813,13 @@
 .morph-button-modal-1 .morph-content,
 .morph-button-modal-2 > button,
 .morph-button-modal-2 .morph-content {
-  background: #B69853;
+  background: rgba(113, 109, 103, 1);
   border-bottom: 2px solid darken(#B69853, 20%);
   //border: 1px solid rgba(0, 0, 0, ., 1);
   color: rgba(255,255,255,1);
   
   &:hover {
-    background: #B69853;
+    background: rgba(113, 109, 103, 1);
     color: rgba(255,255,255,1);
   }
   

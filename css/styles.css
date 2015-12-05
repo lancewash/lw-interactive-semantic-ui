@@ -4131,7 +4131,6 @@ i.icon.bed:before {
 
 .morph-button > button {
   position: relative;
-  border: 1px solid #fff;
   background: white;
   color: rgba(255, 255, 255, 0.9);
   color: rgba(0, 0, 0, 0.75);
@@ -4145,7 +4144,8 @@ i.icon.bed:before {
 .morph-button > button:hover, .morph-button > button:active {
   background: #b69853;
   background: #b69853;
-  border: 1px solid #fff;
+  background: #716d67;
+  border: 1px solid #000;
   color: white;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
@@ -4155,7 +4155,8 @@ i.icon.bed:before {
 
 .morph-button > button.active, .morph-button > button:active {
   background: #b69853;
-  border: 1px solid #fff;
+  background: #716d67;
+  border: 1px solid #000;
 }
 
 .morph-button.open > button {
@@ -4253,9 +4254,9 @@ i.icon.bed:before {
 
 .morph-button-overlay .morph-content {
   overflow: hidden;
-  background: #b69853;
+  background: #716d67;
   color: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid #716d67;
 }
 
 .morph-button-overlay.open .morph-content {
@@ -4322,7 +4323,7 @@ i.icon.bed:before {
 .morph-button-modal-1 .morph-content,
 .morph-button-modal-2 > button,
 .morph-button-modal-2 .morph-content {
-  background: #B69853;
+  background: #716d67;
   border-bottom: 2px solid #725e31;
   color: white;
 }
@@ -4331,7 +4332,7 @@ i.icon.bed:before {
 .morph-button-modal-1 .morph-content:hover,
 .morph-button-modal-2 > button:hover,
 .morph-button-modal-2 .morph-content:hover {
-  background: #B69853;
+  background: #716d67;
   color: white;
 }
 
@@ -4676,7 +4677,7 @@ i.icon.bed:before {
 
 .button:hover {
   color: white;
-  background: #b69853;
+  background: #716d67;
 }
 
 input[type="submit"].button {
@@ -6278,8 +6279,41 @@ navigation
 My Styles
 */
 body {
-  background: rgba(230, 230, 230, 0.5);
   overflow-x: hidden;
+}
+
+#left, #right, #top, #bottom {
+  background: #000;
+  position: fixed;
+  z-index: 999999;
+}
+
+#left, #right {
+  top: 0;
+  bottom: 0;
+  width: 3px;
+}
+
+#left {
+  left: 0;
+}
+
+#right {
+  right: 0;
+}
+
+#top, #bottom {
+  left: 0;
+  right: 0;
+  height: 3px;
+}
+
+#top {
+  top: 0;
+}
+
+#bottom {
+  bottom: 0;
 }
 
 /*body:before, body:after {
@@ -6303,7 +6337,7 @@ body {
 }*/
 .page-wrap, main {
   background: white;
-  max-width: 1440px;
+  max-width: 1680px;
   margin: 0 auto;
 }
 
@@ -6557,7 +6591,6 @@ body {
 
 .project-item {
   background: white;
-  border-top: 1px solid #fff;
   -webkit-box-align: center !important;
   -webkit-align-items: center !important;
       -ms-flex-align: center !important;
@@ -6597,7 +6630,7 @@ body {
 }
 
 .project-item img {
-  margin-bottom: -2px;
+  margin-bottom: -3px;
   position: relative;
 }
 
@@ -6669,18 +6702,15 @@ body {
 }
 
 .project-item h2 {
-  color: black;
-  margin: 4rem 0 0;
+  font-size: 1.25rem;
 }
 
 .column-left {
-  border-right: 1px solid white;
   margin-right: -2px;
 }
 
 .column-right {
   background-clip: content-box;
-  border-left: 1px solid white;
   margin-bottom: 1px;
 }
 
@@ -6689,8 +6719,8 @@ body {
     height: 600px;
     padding-top: 3em;
     padding-bottom: 2em;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 0;
+    padding-right: 0;
   }
   .navbar {
     float: none;
@@ -6703,8 +6733,8 @@ body {
   }
   .navbar li {
     float: left;
-    margin: 0;
-    width: 50%;
+    margin: 0 1%;
+    width: 48%;
   }
   .navbar a {
     display: block;
@@ -6717,15 +6747,15 @@ body {
     font-size: 1rem;
   }
   .brand-top {
-    height: 130px;
+    height: 150px;
   }
   .brand-top img {
     display: block;
     margin: 0 auto;
   }
   .heading-top {
-    height: 440px;
-    padding: 0 4rem !important;
+    height: 340px;
+    padding: 0 2rem !important;
   }
   .heading-top h1 {
     font-size: 1.25rem;
@@ -6767,8 +6797,16 @@ body {
   .header-main {
     padding-top: 2em;
   }
-  h1 {
-    font-size: .9rem;
+  .brand-top {
+    height: 150px;
+  }
+  .heading-top {
+    height: 320px;
+    padding: 0 0.5rem !important;
+  }
+  .heading-top h1:before, .heading-top h1:after {
+    display: none;
+    border: none;
   }
   .navbar li a {
     background: rgba(113, 109, 103, 0.5);
@@ -6776,7 +6814,14 @@ body {
     margin: 0 auto 1px;
     max-width: 160px;
   }
+  .navbar li a:hover {
+    background: #716d67;
+    color: white;
+  }
   .morph-button-fixed, .morph-button-fixed .morph-content {
     width: 150px;
+  }
+  .morph-button.morph-button-overlay {
+    margin: 0;
   }
 }
