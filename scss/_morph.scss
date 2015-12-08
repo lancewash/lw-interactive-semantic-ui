@@ -1,14 +1,14 @@
 /* Icons */
-@font-face {
-  font-weight: normal;
-  font-style: normal;
-  font-family: 'icomoon';
-  src:url('../fonts/icomoon/icomoon.eot?i64fx9');
-  src:url('../fonts/icomoon/icomoon.eot?#iefixi64fx9') format('embedded-opentype'),
-  url('../fonts/icomoon/icomoon.woff?i64fx9') format('woff'),
-  url('../fonts/icomoon/icomoon.ttf?i64fx9') format('truetype'),
-  url('../fonts/icomoon/icomoon.svg?i64fx9#icomoon') format('svg');
-}
+//@font-face {
+//  font-weight: normal;
+//  font-style: normal;
+//  font-family: 'icomoon';
+//  src:url('../fonts/icomoon/icomoon.eot?i64fx9');
+//  src:url('../fonts/icomoon/icomoon.eot?#iefixi64fx9') format('embedded-opentype'),
+//  url('../fonts/icomoon/icomoon.woff?i64fx9') format('woff'),
+//  url('../fonts/icomoon/icomoon.ttf?i64fx9') format('truetype'),
+//  url('../fonts/icomoon/icomoon.svg?i64fx9#icomoon') format('svg');
+//}
 
 .icon-close {
   z-index: 100;
@@ -624,6 +624,7 @@
   &.active, &:active {
     background: rgba(182, 152, 83, 1);
     background: rgba(113, 109, 103, 1);
+    background: rgba(0,0,0,1);
     border: 1px solid #000;
   }
   //&:hover {
@@ -689,8 +690,8 @@
   position: fixed;
   z-index: 900;
   opacity: 0;
-  -webkit-transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
-  transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+  -webkit-transition: opacity 0.3s 1s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+  transition: opacity 0.3s 1s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
 }
 
 .morph-button-fixed.open .morph-content {
@@ -709,8 +710,8 @@
   visibility: visible;
   height: auto;
   opacity: 1;
-  -webkit-transition: opacity 0.3s 0.5s;
-  transition: opacity 0.3s 0.5s;
+  -webkit-transition: opacity 1s 0.5s;
+  transition: opacity 1s 0.5s;
 }
 
 .morph-button-fixed.active > button {
@@ -776,6 +777,7 @@
 
 .morph-button-modal.open::before {
   opacity: 1;
+
   pointer-events: auto;
 }
 

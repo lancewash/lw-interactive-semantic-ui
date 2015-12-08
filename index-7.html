@@ -7,18 +7,18 @@
     <script src="js/modernizr.custom.js"></script>
 </head>
 <body>
-<div class="main-wrap">
-<div class="page-wrap">
+
+<div class="page-wrap animsition">
     <header class="header-main">
         <div class="[ ui grid ] brand-top">
             <div class="[ six wide column ]">
-                <a href="index-7.html"><img src="img/lw-interactive.png" alt=""/></a>
+                <a  class="animsition-link" href="index-7.html"><img src="img/lw-interactive.png" alt=""/></a>
             </div>
             <div class="[ ten wide column ]">
                 <nav class="navbar">
                     <ul>
-                        <li><a href="project-1.html"><!--<i class="icon list"></i>--> Projects</a></li>
-                        <li><a href="">Case Studies</a></li>
+                        <li><a  class="animsition-link" href="project-1.html"><!--<i class="icon list"></i>--> Projects</a></li>
+                        <li><a  class="animsition-link" href="">Case Studies</a></li>
                         <!--<li class="button">About</li>-->
                         <!--<li class="button">Resources</li>-->
                     </ul>
@@ -30,7 +30,8 @@
                 <h1>LW Interactive delivers outstanding interactive experiences with highest possible standards</h1>
 
                 <p>I focus on clean simple design along with clean modular code to deliver an exceptional web experience
-                    for all users.</p>
+                    for all users.<br>
+                <em>From Concept to Completion... I Deliver...</em></p>
             </div>
         </div>
         <div class="ui two column centered grid profile-wrap">
@@ -186,7 +187,7 @@
         </div>
     </main>
 </div>
-</div>
+
 <div id="left"></div>
 <div id="right"></div>
 <div id="top"></div>
@@ -280,5 +281,11 @@
         });
     });
 </script>-->
+<script src="js/animsition.js" charset="utf-8"></script>
+<script>
+    $(document).ready(function() {
+        $('.animsition').animsition();
+    });
+</script>
 </body>
 </html>

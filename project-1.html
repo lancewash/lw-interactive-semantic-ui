@@ -7,17 +7,17 @@
     <script src="js/modernizr.custom.js"></script>
 </head>
 <body>
-<div class="page-wrap subpage">
+<div class="page-wrap subpage animsition">
     <header class="header-main">
         <div class="[ ui grid ] brand-top">
             <div class="[ six wide column ]">
-                <a href="index-7.html"><img src="img/lw-interactive.png" alt=""/></a>
+                <a  class="animsition-link" href="index-7.html"><img src="img/lw-interactive.png" alt=""/></a>
             </div>
             <div class="[ ten wide column ]">
                 <nav class="navbar">
                     <ul>
-                        <li><a href="">Projects</a></li>
-                        <li><a href="">Case Studies</a></li>
+                        <li><a  class="animsition-link" href="">Projects</a></li>
+                        <li><a  class="animsition-link" href="">Case Studies</a></li>
                         <!--<li class="button">About</li>-->
                         <!--<li class="button">Resources</li>-->
                     </ul>
@@ -203,5 +203,11 @@
         });
     });
 </script>-->
+<script src="js/animsition.js" charset="utf-8"></script>
+<script>
+    $(document).ready(function() {
+        $('.animsition').animsition();
+    });
+</script>
 </body>
 </html>
