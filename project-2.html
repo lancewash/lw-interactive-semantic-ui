@@ -32,7 +32,7 @@
             </div>
 
         </div>
-        <div class="ui sixteen column centered grid project-item header-bottom mc">
+        <div class="ui sixteen column centered grid project-item header-bottom sticky mc">
             <a href="">Visit Site</a>
         </div>
 
@@ -46,35 +46,12 @@
     <main class="projects">
 
         <div class="ui stackable grid project-item">
-
-            <!--<figure class="cd-image-container">
-
-                <img src="img/fabc-screenshot.jpg" alt="Original Image">
-                &lt;!&ndash;<span class="cd-image-label" data-type="original">Original</span>&ndash;&gt;
-
-                <div class="cd-resize-img"> &lt;!&ndash; the resizable image on top &ndash;&gt;
-                    <img src="img/fabc-wireframe.png" alt="Modified Image">
-                    &lt;!&ndash;<span class="cd-image-label" data-type="modified">Modified</span>&ndash;&gt;
-                </div>
-                <span class="cd-handle high"></span>
-                <span class="cd-handle"></span>
-                <span class="cd-handle low"></span>
-            </figure>--> <!-- cd-image-container -->
-            <!--<div class="sixteen wide column project-title project-details">
-                <h1>Project Scope</h1>
-                <ul>
-                    <li>There are many variations of passages</li>
-                    <li>There are many variations</li>
-                    <li>There are many variations of passages of</li>
-                    <li>There are many variations of passages of Lorem</li>
-                    <li>There are many variations</li>
-                </ul>
-            </div>-->
-            <div class="sixteen wide column project-title"> <!--  slide-left -->
-                <img class="" src="img/projects/test.png" alt=""/>
-            </div>
-            <div class="eight wide column centered project-details slide-bottom">
+            <div class="eight wide column project-title"> <!--  slide-left -->
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolor dolores dolorum harum in libero minus quae sunt tenetur voluptatem. Aliquid atque debitis officia perferendis suscipit vel! Ducimus harum, voluptatum?</p>
+
+            </div>
+            <div class="eight wide column centered project-details project-img">
+                <!--<img class="" src="img/projects/gifted-scholars-half.jpg" alt=""/>-->
             </div>
         </div>
 
@@ -202,6 +179,28 @@
         });
     });
 </script>-->
+<script src="js/sticky.js"></script>
+<script>
+    //    $(function(){ // document ready
+    //        if (!!$('.sticky').offset()) { // make sure ".sticky" element exists
+    //            var stickyTop = $('.sticky').offset().top; // returns number
+    //            $(window).scroll(function(){ // scroll event
+    //                var windowTop = $(window).scrollTop(); // returns number
+    //                if (stickyTop < windowTop){
+    //                    $('.sticky').css({ position: 'fixed', top: 0 });
+    //                }
+    //                else {
+    //                    $('.sticky').css('position','static');
+    //                }
+    //            });
+    //        }
+    //    });
+
+
+    var sticky = new Waypoint.Sticky({
+        element: $('.sticky')[0]
+    });
+</script>
 <script src="js/animsition.js" charset="utf-8"></script>
 <script>
     $(document).ready(function() {

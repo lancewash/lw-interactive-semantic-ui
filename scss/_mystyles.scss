@@ -54,25 +54,32 @@ body {
   max-width: 1600px;
   margin: 0 auto;
 }
+
+main {
+  
+  .home & {
+    background: rgba(0,0,0,.1);
+  }
+}
 //.page-wrap {
 //  margin-bottom: 200px;
 //}
-.header-wrap {
-  background: rgba(255,255,255,1);
-  height: 100vh;
-  width: 100%;
-}
+//.header-wrap {
+//  background: rgba(255,255,255,1);
+//  height: 100vh;
+//  width: 100%;
+//}
 .header-main {
   background: rgba(255,255,255,1);
   border-bottom: rgba(0, 0, 0,.025);
   //height: 50vh;
-  height: 800px;
+  height: 100vh;
   //height:90vh;
   margin: 0 auto 2em;
   //padding: 0 4em;
 
   .subpage & {
-    height: 644px;
+    height: 100vh;
     margin-bottom: 0;
   }
   &:before, &:after {
@@ -97,7 +104,7 @@ body {
   h1 {
     color: #B69853;
   }
-  .brand-top {
+  .header-top {
     max-width: 80em;
   }
   .grid {
@@ -133,16 +140,16 @@ body {
   //background: rgba(255,255,255,1);
 }
 
-.brand-top {
-  height: 150px;
+.header-top {
+  height: 15vh;
 }
-.heading-top {
-  height: 480px;
+.header-mid {
+  height: 65vh;
   //height: 40vh;
   margin-top: 0 !important;
   
   .subpage & {
-    height: 480px;
+    height: 75vh;
 
     &.subpage-banner {
 
@@ -270,16 +277,32 @@ body {
     line-height: 2.25rem;
   }
 }
+.header-bottom {
+  height: 20vh;
 
+  .subpage & {
+    height: 10vh;
+  }
+}
 .projects {
   //padding: 0 1px;
   background: rgba(255,255,255,1);
-  background: rgba(0, 0, 0, .1);
   
   .ui.grid {
     margin-bottom: -1.05em;
     margin-left: 0;
     margin-right: 0;
+    //padding: 0 3em;
+
+    &.project-item {
+      margin: 0;
+    }
+
+    .project-img {
+      background: url("../img/projects/gifted-scholars-half.jpg") no-repeat top left;
+      min-height: 1000px;
+    }
+
   }
   .column {
     //margin-bottom: 2px;
@@ -295,12 +318,18 @@ body {
     background: transparent;
     //overflow: hidden;
   }
+
+  p {
+    font-family: $baseFontFamily;
+    line-height:1.8rem;
+    text-align: center;
+  }
 }
 
 .project-title {
   font-size: $h2FontSize - 18px;
   letter-spacing: .15em;
-  text-transform: uppercase;
+  //text-transform: uppercase;
 
   .subpage & {
     font-family: $baseFontFamily;
@@ -344,7 +373,7 @@ body {
     }
   }
 }
-.project-item {
+.home .project-item {
   //background: rgba(255,255,255,1);
   //border-top: 1px solid #fff;
   align-items: center !important;
@@ -379,6 +408,7 @@ body {
     -ms-transition: all .25s ease-in-out;
     -o-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out;
+
     
     img {
       position: absolute;
@@ -493,7 +523,48 @@ body {
     color: rgba(0,0,0,1);
   }
 }
+&.subpage {
 
+  .ui.grid {
+
+
+    &.project-item {
+      margin: 0;
+
+      &.fabc {
+        background: #3c0308;
+      }
+      &.sii {
+        background: #2FADD5;
+      }
+      &.lw {
+        background: rgba(182,152,83,1);
+      }
+      &.mc {
+        background: rgba(0,0,0,1);
+      }
+
+      a {
+        background: rgba(255,255,255,1);
+        border: 1px solid rgba(255,255,255,.5);
+        color: rgba(0,0,0,.75);
+        letter-spacing: .1rem;
+        padding: .75rem 1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 260px;
+
+        &:hover {
+          background: rgba(255,255,255,.25);
+          color: rgba(255,255,255,1);
+          border: 1px solid rgba(255,255,255,.5);
+        }
+      }
+  }
+
+
+  }
+}
 .column-left {
   //border-right: 1px solid rgba(255, 255, 255, 1);
   margin-right: -2px;
@@ -513,7 +584,7 @@ body {
     padding-left: 0;
     padding-right: 0;
 
-    //.heading-top {
+    //.header-mid {
     //  -webkit-box-align: end;
     //  -webkit-align-items: flex-end;
     //  -ms-flex-align: end;
@@ -547,7 +618,7 @@ body {
   h1 {
     font-size: 1rem;
   }
-  .brand-top {
+  .header-top {
     height: 150px;
     
     img {
@@ -556,7 +627,7 @@ body {
     }
   }
 
-  .heading-top {
+  .header-mid {
     height: 340px;
     padding: 0 2rem !important;
     
@@ -570,6 +641,7 @@ body {
       line-height: 2rem;
     }
   }
+
   .morph-button-fixed, .morph-button-fixed .morph-content {
     width: 150px;
   }
@@ -606,10 +678,10 @@ body {
   .header-main {
     padding-top: 2em;
   }
-  .brand-top {
+  .header-top {
     height: 150px;
   }
-  .heading-top {
+  .header-mid {
     height: 320px;
     padding: 0 .5rem !important;
 

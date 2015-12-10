@@ -17,5 +17,8 @@ h1, h2, h3 {
 }
 
 p, li, a {
-
+  -moz-transition: all .25s ease-in-out;
+  -ms-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
 }
