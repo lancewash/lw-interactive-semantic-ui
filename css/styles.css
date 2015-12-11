@@ -3686,15 +3686,12 @@ i.icon.bed:before {
   text-transform: uppercase;
   line-height: 3;
   width: 120px;
-  border: 1px solid black;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
 
 .content-style-overlay .icon-close:hover {
-  background: black;
-  border: 1px solid black;
-  color: white;
+  color: black;
 }
 
 /* Style for text modal */
@@ -3924,12 +3921,7 @@ i.icon.bed:before {
 }
 
 .morph-button > button:hover, .morph-button > button:active {
-  background: #b69853;
-  background: #b69853;
-  background: #716d67;
-  background: black;
-  border: 1px solid #000;
-  color: white;
+  outline: none;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   cursor: -webkit-zoom-in;
@@ -3937,10 +3929,7 @@ i.icon.bed:before {
 }
 
 .morph-button > button.active, .morph-button > button:active {
-  background: #b69853;
-  background: #716d67;
-  background: black;
-  border: 1px solid #000;
+  outline: none;
 }
 
 .morph-button.open > button {
@@ -3963,7 +3952,7 @@ i.icon.bed:before {
 }
 
 .morph-button-fixed > button {
-  border: 1px solid black;
+  border: 1px solid white;
   font-family: "montserratregular";
   font-size: 12px;
   z-index: 1000;
@@ -4008,7 +3997,7 @@ i.icon.bed:before {
 }
 
 .morph-button-fixed.active > button {
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.25);
   z-index: 2000;
 }
 
@@ -8428,20 +8417,17 @@ body {
 }
 
 .subpage .ui.grid.project-item a {
-  background: white;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  color: rgba(0, 0, 0, 0.75);
-  letter-spacing: .1rem;
-  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: .25rem;
+  padding: 0;
   text-decoration: none;
   text-transform: uppercase;
-  width: 260px;
 }
 
 .subpage .ui.grid.project-item a:hover {
-  background: rgba(255, 255, 255, 0.25);
   color: white;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .column-left {

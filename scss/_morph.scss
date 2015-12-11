@@ -132,7 +132,7 @@
   text-transform: uppercase;
   line-height: 3;
   width: 120px;
-  border: 1px solid rgba(0,0,0,1);
+  //border: 1px solid rgba(0,0,0,1);
   -webkit-transition: all .25s ease-in-out;
   -moz-transition: all .25s ease-in-out;
   -ms-transition: all .25s ease-in-out;
@@ -140,9 +140,9 @@
   transition: all .25s ease-in-out;
 
   &:hover {
-    background: rgba(0,0,0,1);
-    border: 1px solid rgba(0,0,0,1);
-    color: rgba(255,255,255,1);
+    //background: rgba(0,0,0,1);
+    //border: 1px solid rgba(0,0,0,1);
+    color: rgba(0,0,0,1);
   }
 }
 
@@ -608,12 +608,13 @@
   
   
     &:hover, &:active {
-      background: rgba(182, 152, 83, 1);
-      background: rgba(182, 152, 83, 1);
-      background: rgba(113, 109, 103, 1);
-      background: rgba(0,0,0,1);
-      border: 1px solid #000;
-      color: rgba(255,255,255, 1);
+      //background: rgba(182, 152, 83, 1);
+      //background: rgba(182, 152, 83, 1);
+      //background: rgba(113, 109, 103, 1);
+      //background: rgba(0,0,0,1);
+      //border: 1px solid #000;
+      //color: rgba(255,255,255, 1);
+      outline: none;
       -webkit-transition: all .25s ease-in-out;
       -moz-transition: all .25s ease-in-out;
       -ms-transition: all .25s ease-in-out;
@@ -622,10 +623,11 @@
       cursor: zoom-in;
     }
   &.active, &:active {
-    background: rgba(182, 152, 83, 1);
-    background: rgba(113, 109, 103, 1);
-    background: rgba(0,0,0,1);
-    border: 1px solid #000;
+    outline: none;
+    //background: rgba(182, 152, 83, 1);
+    //background: rgba(113, 109, 103, 1);
+    //background: rgba(0,0,0,1);
+    //border: 1px solid #000;
   }
   //&:hover {
   //  //color: rgba(255,255,255,1);
@@ -663,7 +665,7 @@
 }
 
 .morph-button-fixed > button {
-  border: 1px solid rgba(0,0,0,1);
+  border: 1px solid rgba(255,255,255,1);
   font-family: $mainNavFontFamily;
   font-size: $superSmallFontSize;
   z-index: 1000;
@@ -715,7 +717,7 @@
 }
 
 .morph-button-fixed.active > button {
-  border: 1px solid rgba(0,0,0,1);
+  border: 1px solid rgba(0,0,0,.25);
   z-index: 2000;
 }
 

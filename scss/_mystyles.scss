@@ -545,19 +545,21 @@ main {
       }
 
       a {
-        background: rgba(255,255,255,1);
-        border: 1px solid rgba(255,255,255,.5);
-        color: rgba(0,0,0,.75);
-        letter-spacing: .1rem;
-        padding: .75rem 1rem;
+        //background: rgba(255,255,255,1);
+        //border: 1px solid rgba(255,255,255,.5);
+        border-bottom: 1px solid rgba(255,255,255,0);
+        color: rgba(255,255,255,.75);
+        letter-spacing: .25rem;
+        padding: 0;
+        //padding: .1rem 1rem;
         text-decoration: none;
         text-transform: uppercase;
-        width: 260px;
+        //width: 260px;
 
         &:hover {
-          background: rgba(255,255,255,.25);
+          //background: rgba(255,255,255,.25);
           color: rgba(255,255,255,1);
-          border: 1px solid rgba(255,255,255,.5);
+          border-bottom: 1px solid rgba(255,255,255,.5);
         }
       }
   }
