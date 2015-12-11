@@ -51,7 +51,7 @@ body {
 
 .page-wrap, main {
   background: rgba(255,255,255,1);
-  max-width: 1600px;
+  max-width: 1680px;
   margin: 0 auto;
 }
 
@@ -75,7 +75,7 @@ main {
   //height: 50vh;
   height: 100vh;
   //height:90vh;
-  margin: 0 auto 2em;
+  margin: 0 auto;
   //padding: 0 4em;
 
   .subpage & {
@@ -105,7 +105,7 @@ main {
     color: #B69853;
   }
   .header-top {
-    max-width: 80em;
+    max-width: 1440px;
   }
   .grid {
     margin: 0 auto;
@@ -214,11 +214,12 @@ main {
   }
 
   h1 {
-    font-size: 2rem;
-    font-weight: 300;
-    //color: rgba(182,152,83,1);
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: rgba(182,152,83,1);
     line-height: 3rem;
     margin-bottom: .5rem;
+    text-transform: uppercase;letter-spacing: .1rem;
 
     &::before {
       border-bottom: 1px solid rgba(0,0,0,.1);

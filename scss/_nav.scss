@@ -38,7 +38,7 @@ navigation
 
      a {
        color: $colorLink;
-       font-size: .85rem;
+       font-size: .75rem;
        font-weight: 800;
        letter-spacing: 0.25em;
        padding: 1rem 0;
@@ -50,7 +50,7 @@ navigation
        
        &:hover {
          color: $colorLinkHover;
-         
+         cursor: pointer;
        }
      }
    }

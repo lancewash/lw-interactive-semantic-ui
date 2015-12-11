@@ -4428,6 +4428,125 @@ i.icon.bed:before {
   }
 }
 
+/* Overlay style */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 99999;
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  overflow: hidden;
+  border: none;
+  background: url(../img/cross.png) no-repeat center center;
+  text-indent: 200%;
+  color: transparent;
+  outline: none;
+  z-index: 100;
+}
+
+/* Menu style */
+.overlay nav {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  height: 60%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+}
+
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+}
+
+.overlay ul li {
+  display: block;
+  text-align: left;
+}
+
+.overlay ul li a {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 1.25rem;
+  font-weight: 100;
+  display: block;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 1rem 0;
+  -webkit-transition: color 0.2s;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+          transition: color 0.2s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+  color: white;
+}
+
+/* Effects */
+.overlay-hugeinc {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-hugeinc.open {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.overlay-hugeinc nav {
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+}
+
+.overlay-hugeinc nav ul {
+  opacity: 0.4;
+  -webkit-transform: translateY(-25%) rotateX(35deg);
+  transform: translateY(-25%) rotateX(35deg);
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.overlay-hugeinc.open nav ul {
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+.overlay-hugeinc.close nav ul {
+  -webkit-transform: translateY(25%) rotateX(-35deg);
+  transform: translateY(25%) rotateX(-35deg);
+}
+
+@media screen and (max-height: 30.5em) {
+  .overlay nav {
+    height: 70%;
+    font-size: 34px;
+  }
+  .overlay ul li {
+    min-height: 34px;
+  }
+}
+
 /* =Buttons
 -----------------------------------------------------------------------------*/
 .button {
@@ -4440,7 +4559,7 @@ i.icon.bed:before {
   line-height: .5;
   text-align: center;
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.8);
+  color: black;
   margin: 0;
   border: 1px solid rgba(182, 152, 83, 0.25);
   box-shadow: none;
@@ -4684,8 +4803,8 @@ navigation
 }
 
 .navbar li a {
-  color: rgba(0, 0, 0, 0.8);
-  font-size: .85rem;
+  color: black;
+  font-size: .75rem;
   font-weight: 800;
   letter-spacing: 0.25em;
   padding: 1rem 0;
@@ -4698,6 +4817,7 @@ navigation
 
 .navbar li a:hover {
   color: #b69853;
+  cursor: pointer;
 }
 
 .navbar:hover a {
@@ -8004,7 +8124,7 @@ body {
 }*/
 .page-wrap, main {
   background: white;
-  max-width: 1600px;
+  max-width: 1680px;
   margin: 0 auto;
 }
 
@@ -8016,7 +8136,7 @@ body {
   background: white;
   border-bottom: rgba(0, 0, 0, 0.025);
   height: 100vh;
-  margin: 0 auto 2em;
+  margin: 0 auto;
 }
 
 .subpage .header-main {
@@ -8049,7 +8169,7 @@ body {
 }
 
 .header-main .header-top {
-  max-width: 80em;
+  max-width: 1440px;
 }
 
 .header-main .grid {
@@ -8128,10 +8248,13 @@ body {
 }
 
 .header-mid h1 {
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #b69853;
   line-height: 3rem;
   margin-bottom: .5rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
   /*&::before {
       border-bottom: 1px solid rgba(0,0,0,.1);
       top: -10px;
