@@ -3654,9 +3654,18 @@ i.icon.bed:before {
 }
 
 .icon-close {
+  width: 65px;
+  height: 65px;
   position: absolute;
-  top: 40px;
-  right: 40px;
+  right: 30px;
+  top: 30px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: url(../img/closeX.png) no-repeat center center;
+  text-indent: 200%;
+  color: transparent;
+  outline: none;
+  z-index: 100;
 }
 
 /* Styles for dummy content */
@@ -3685,7 +3694,6 @@ i.icon.bed:before {
   font-size: 1em;
   text-transform: uppercase;
   line-height: 3;
-  width: 120px;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
@@ -8124,12 +8132,12 @@ body {
 }*/
 .page-wrap, main {
   background: white;
-  max-width: 1680px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
 .home main {
-  background: rgba(0, 0, 0, 0.1);
+  background: #fff;
 }
 
 .header-main {
@@ -8236,8 +8244,7 @@ body {
 }
 
 .subpage .header-mid.mc {
-  background: url("../img/mc-header.jpg") 50% 50% no-repeat;
-  background: #323232;
+  background: url("../img/music-choice-header.png") 50% 50% no-repeat;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -8333,7 +8340,8 @@ body {
 }
 
 .projects .ui.grid.project-item {
-  margin: 0;
+  margin: 0 0 30px;
+  overflow: hidden;
 }
 
 .projects .ui.grid .project-img {
@@ -8416,6 +8424,7 @@ body {
 .home .project-item a {
   color: #b69853;
   padding: 1rem 0;
+  background: rgba(0, 0, 0, 0.25);
   display: block;
   position: absolute;
   left: 0;
@@ -8423,13 +8432,13 @@ body {
   margin: 0 auto;
   text-decoration: none;
   text-transform: uppercase;
-  top: 5%;
-  bottom: 5%;
-  height: 90%;
+  top: 9%;
+  bottom: 9%;
+  height: 82%;
   width: 94%;
   opacity: 0;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .home .project-item a img {
@@ -8553,13 +8562,8 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.column-left {
-  margin-right: -2px;
-}
-
 .column-right {
   background-clip: content-box;
-  margin-bottom: 1px;
 }
 
 @media only screen and (max-width: 991px) {

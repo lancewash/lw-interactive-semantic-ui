@@ -91,9 +91,21 @@
 }
 
 .icon-close {
+  //position: absolute;
+  //top: 40px;
+  //right: 40px;
+  width: 65px;
+  height: 65px;
   position: absolute;
-  top: 40px;
-  right: 40px;
+  right: 30px;
+  top: 30px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,.15);
+  background: url(../img/closeX.png) no-repeat center center;
+  text-indent: 200%;
+  color: transparent;
+  outline: none;
+  z-index: 100;
 }
 
 .icon-close:hover {
@@ -131,7 +143,7 @@
   font-size: 1em;
   text-transform: uppercase;
   line-height: 3;
-  width: 120px;
+  //width: 120px;
   //border: 1px solid rgba(0,0,0,1);
   -webkit-transition: all .25s ease-in-out;
   -moz-transition: all .25s ease-in-out;

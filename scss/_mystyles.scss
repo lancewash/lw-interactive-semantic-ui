@@ -51,14 +51,15 @@ body {
 
 .page-wrap, main {
   background: rgba(255,255,255,1);
-  max-width: 1680px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
 main {
   
   .home & {
-    background: rgba(0,0,0,.1);
+    //background: rgba(0,0,0,.1);
+    background: #fff;
   }
 }
 //.page-wrap {
@@ -201,8 +202,8 @@ main {
     }
 
     &.mc {
-      background: url("../img/mc-header.jpg") 50% 50% no-repeat;
-      background: #323232;
+      background: url("../img/music-choice-header.png") 50% 50% no-repeat;
+      //background: #323232;
       color: rgba(255,255,255,.8);
     }
 
@@ -296,7 +297,8 @@ main {
     //padding: 0 3em;
 
     &.project-item {
-      margin: 0;
+      margin: 0 0 30px;
+      overflow: hidden;
     }
 
     .project-img {
@@ -389,9 +391,9 @@ main {
 
 
   a {
-    //border: 1px solid rgba(255,255,255,.5);
-    color: rgba(182,152,83,1);
+    color: #b69853;
     padding: 1rem 0;
+    background: rgba(0,0,0,.25);
     display: block;
     position: absolute;
     left: 0;
@@ -399,16 +401,16 @@ main {
     margin: 0 auto;
     text-decoration: none;
     text-transform: uppercase;
-    top: 5%;
-    bottom: 5%;
-    height: 90%;
+    top: 9%;
+    bottom: 9%;
+    height: 82%;
     width: 94%;
     opacity: 0;
-    -webkit-transition: all .25s ease-in-out;
-    -moz-transition: all .25s ease-in-out;
-    -ms-transition: all .25s ease-in-out;
-    -o-transition: all .25s ease-in-out;
-    transition: all .25s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 
     
     img {
@@ -570,13 +572,13 @@ main {
 }
 .column-left {
   //border-right: 1px solid rgba(255, 255, 255, 1);
-  margin-right: -2px;
+  //margin-right: -2px;
 }
 
 .column-right {
   background-clip: content-box;
   //border-left: 1px solid rgba(255,255,255,1);
-  margin-bottom: 1px;
+  //margin-bottom: 1px;
 }
 @media only screen and (max-width: 991px) {
 
