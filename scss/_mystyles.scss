@@ -215,12 +215,20 @@ main {
   }
 
   h1 {
-    font-size: 2.25rem;
+    font-size: 1.75rem;
     font-weight: 800;
     color: rgba(182,152,83,1);
-    line-height: 3rem;
+    line-height: 2.5rem;
     margin-bottom: .5rem;
     text-transform: uppercase;letter-spacing: .1rem;
+    
+    strong {
+      color: rgba(0,0,0,.75);
+      letter-spacing: .5rem;
+    }
+    span {
+      color: #b69853;
+    }
 
     &::before {
       border-bottom: 1px solid rgba(0,0,0,.1);
@@ -297,7 +305,7 @@ main {
     //padding: 0 3em;
 
     &.project-item {
-      margin: 0 0 30px;
+      margin: 0 0 1px;
       overflow: hidden;
     }
 

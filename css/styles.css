@@ -3660,7 +3660,7 @@ i.icon.bed:before {
   right: 30px;
   top: 30px;
   overflow: hidden;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: none;
   background: url(../img/closeX.png) no-repeat center center;
   text-indent: 200%;
   color: transparent;
@@ -3929,6 +3929,7 @@ i.icon.bed:before {
 }
 
 .morph-button > button:hover, .morph-button > button:active {
+  color: #b69853;
   outline: none;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
@@ -4443,20 +4444,20 @@ i.icon.bed:before {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: white;
   z-index: 99999;
 }
 
 /* Overlay closing cross */
 .overlay .overlay-close {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 30px;
+  top: 30px;
   overflow: hidden;
   border: none;
-  background: url(../img/cross.png) no-repeat center center;
+  background: url(../img/closeX.png) no-repeat center center;
   text-indent: 200%;
   color: transparent;
   outline: none;
@@ -4489,11 +4490,11 @@ i.icon.bed:before {
 }
 
 .overlay ul li a {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   font-size: 1.25rem;
   font-weight: 100;
   display: block;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(0, 0, 0, 0.75);
   padding: 1rem 0;
   -webkit-transition: color 0.2s;
   text-decoration: none;
@@ -4503,7 +4504,8 @@ i.icon.bed:before {
 
 .overlay ul li a:hover,
 .overlay ul li a:focus {
-  color: white;
+  border-bottom: 1px solid rgba(182, 152, 83, 0.5);
+  color: #b69853;
 }
 
 /* Effects */
@@ -8255,10 +8257,10 @@ body {
 }
 
 .header-mid h1 {
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   font-weight: 800;
   color: #b69853;
-  line-height: 3rem;
+  line-height: 2.5rem;
   margin-bottom: .5rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
@@ -8284,6 +8286,15 @@ body {
       position: absolute;
       width: 50px;
     }*/
+}
+
+.header-mid h1 strong {
+  color: rgba(0, 0, 0, 0.75);
+  letter-spacing: .5rem;
+}
+
+.header-mid h1 span {
+  color: #b69853;
 }
 
 .header-mid h1::before {
@@ -8340,7 +8351,7 @@ body {
 }
 
 .projects .ui.grid.project-item {
-  margin: 0 0 30px;
+  margin: 0 0 1px;
   overflow: hidden;
 }
 

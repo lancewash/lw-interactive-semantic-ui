@@ -5,19 +5,20 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(153, 204, 51, 0.9);
+  background: white;
+  z-index: 99999;
 }
 
 /* Overlay closing cross */
 .overlay .overlay-close {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 30px;
+  top: 30px;
   overflow: hidden;
   border: none;
-  background: url(../img/cross.png) no-repeat center center;
+  background: url(../img/closeX.png) no-repeat center center;
   text-indent: 200%;
   color: transparent;
   outline: none;
@@ -30,7 +31,6 @@
   position: relative;
   top: 50%;
   height: 60%;
-  font-size: 54px;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -46,22 +46,25 @@
 
 .overlay ul li {
   display: block;
-  height: 20%;
-  height: calc(100% / 5);
-  min-height: 54px;
+  text-align: left;
 }
 
 .overlay ul li a {
-  font-weight: 300;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  font-size: 1.25rem;
+  font-weight: 100;
   display: block;
-  color: #fff;
+  color: rgba(0, 0, 0, 0.75);
+  padding: 1rem 0;
   -webkit-transition: color 0.2s;
+  text-decoration: none;
   transition: color 0.2s;
 }
 
 .overlay ul li a:hover,
 .overlay ul li a:focus {
-  color: #e3fcb1;
+  border-bottom: 1px solid rgba(182, 152, 83, 0.1);
+  color: #b69853;
 }
 
 /* Effects */
