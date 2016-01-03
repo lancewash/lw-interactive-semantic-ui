@@ -40,7 +40,8 @@ navigation
        color: $colorLink;
        font-size: .75rem;
        font-weight: 800;
-       letter-spacing: 0.15em;
+       font-family: $mainNavFontFamily;
+       letter-spacing: 0.25em;
        padding: 1rem 0;
        text-decoration: none;
        text-transform: uppercase;
@@ -50,7 +51,7 @@ navigation
        
        &:hover {
          color: $colorLinkHover;
-         
+         cursor: pointer;
        }
      }
    }

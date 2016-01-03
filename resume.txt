@@ -1,0 +1,99 @@
+
+SUMMARY:
+
+Interaction Designer, highly skilled in HTML5 and CSS with 5 years of experience designing websites
+Possessing a solid understanding of User Experience and User Interface design concepts as well as superior problem solving capabilities
+Proficiency in hand coded HTML5 and CSS3 technologies and skilled in debugging markup issues
+Responsive and mobile first web design experience as well as an understanding of jQuery Mobile
+Well versed in cross-browser compatibility, web usability and functionality
+An understanding of SEO and online marketing
+Basic understanding of back-end technologies PHP/MySQL
+Online Portfolio: http://lw-creative.com 
+Skilled in HTML/CSS wire-framing as well as low/hi fidelity mockups
+CMS Experience – Concrete5 and intermediate understanding of WordPress theme creation
+
+TECHNICAL SKILLS:
+ 
+ 
+Adobe Fireworks, Photoshop, Dreamweaver	
+Responsive Frameworks (Bootstrap, Zurb Foundation and more)
+Microsoft Office 2010
+HTML5/CSS3
+PHP/MySQL (Basic)
+Responsive Web Design
+jQuery /JavaScript (conversant)*
+CMS - Concrete5 and WordPress (intermediate)
+LESS and SASS
+Wire framing/Mockup
+ 
+
+*Working knowledge of JavaScript no app dev experience
+
+
+EXPERIENCE:
+
+Front End Web Design and Development /Freelance – (Consulting)                                                                         July 2010 - Present
+
+Develop project plans, specifications, website/application prototypes and information architecture.
+HTML5, CSS3, jQuery, Responsive design.
+Development of complete user interface, design and development.
+Integration with open source CMS (Content Management System) concrete5 and WordPress and MODx.
+Updates, maintenance and analytics
+
+Projects in development:
+Neighbor to Neighbor CDC (http://n2ncdc.org/) 4/2015
+Gifted Scholars (http://giftedscholars.org/) 5/2015
+Love’s Daycare –Early 2016 – In development
+First African Baptist Church (http://fabc-joy.org/) – Early 2016-redesign in development
+Sweet It Is! – redesign new CMS implementation for Early 2016
+Edie’s Catering – TBD-redesign in development
+Nile Swim Club – TBD
+
+
+Front-End Developer – (Contract)                                                                                                                                        January 2015 – Present
+Creative Group
+
+?	Responsible for Coding existing design PSD to responsive cross-browser HTML/CSS and integrating design and complex navigation structure and developing into a WordPress CMS theme.
+
+Tools used: Mac, Adobe Fireworks, Adobe Photoshop, Adobe Illustrator, HTML5, CSS3, Responsive Design, Sublime Text,  Wordpress CMS
+
+
+Front End Web Application Developer, Horsham, PA 			                                            February 2013 – July 2014
+Music Choice (Engineering - Connected Devices Dept)
+
+?	Responsibilities include designing and wire-framing P.O.C. (proof of concepts) for Music Choice’s product line. 
+?	Served in-house web designer for 1 year.
+?	Maintained and updated Music Choices legacy site as well as implemented additional functionality.
+?	Worked with JavaScript templating (Handlebars) engine with in SPA environment for the Music Choice Media Application.
+?	Lead the re-designed the Music Choice corporate website and researched and implemented a new Content Management System and responsive design and saved Music Choice $70,000 yearly maintenance fee from switching over from an enterprise CMS (initial $250,000.00 cost) to Concrete5 CMS (Free open source). Aided and trained the Marketing department on how to use the new CMS (concrete5) in order to help push their marketing initiatives. 
+?	Came up with a unified redesign of the Music Choice product line based on requirements received from the Business dept.  Responsible for updating the current legacy site as the re-design of the new site gets implemented.
+?	Began process of switching image sprite sheets in the Media App to icon fonts as well as building out Facebook and Twitter templates with HTML and CSS to be used on the MC Media App social widget.
+?	Tools used in daily development: Adobe Fireworks, Adobe Photoshop, Adobe Illustrator, WebStorm IDE, Sublime Text, MS Azure, Visual Studio, FTP, jQuery, Wire-framing, Hi-Fi Mockups, Pivotal Tracker, Agile Environment w/ daily Scrums.
+
+
+Front End Web Developer, Ft. Washington, PA				                              September 2012 – February 2013 
+Nutrisystem (Ecommerce Dept.)
+
+?	Responsible for converting Photoshop mock-ups into cross-browser compliant HTML and CSS jQuery/JavaScript implementation. 
+?	Worked closely with Content Management team to update the content through NutriSystem’s Enterprise
+ e-commerce CMS.
+?	Responsible for coding weekly and bi-weekly email campaigns delivered as Photoshop files.
+
+YellAdworks (Digital Marketing), King of Prussia, PA			                                 October 2011 – September 2012 
+Web Support Specialist 
+?	Responsibilities included communicating directly with customer to assess their website needs and making design and layout changes accordingly and customize CSS styles to fit in line with the customer’s desires.
+?	Designing and editing within an enterprise level Content Management System. Implementing best practice SEO to ensure clients website is optimized properly.
+?	Hand-coding outside of the CMS to extend the CMS limitations.
+
+
+INTERNSHIPS:
+
+Total1 Web Solutions Intern, Norwood, PA						                                 2009 – 2010 
+?	Responsibilities include converting new clients' existing websites to current XHTML and CSS standards. 
+?	Creating and converting web and newsletter templates into XHTML and CSS.
+?	Regular updates of client content within the Joomla CMS and editing and modifying graphics, creating mastheads and logos for various clients.
+
+
+EDUCATION:
+Certificate - Interactive Multi Media (2010) Delaware County Community College
+AAS – Interactive Multi Media/Web Development Delaware County Community College (winter-2016)

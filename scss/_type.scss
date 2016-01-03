@@ -11,11 +11,15 @@ h1 {
 }
 h1, h2, h3 {
   //color: $colorHeadings;
-  font-family: 'merriweather_lightregular';
+  //font-family: 'merriweather_lightregular';
   font-weight: 100;
+  //margin: $base-line 0;
  
 }
 
 p, li, a {
-
+  -moz-transition: all .25s ease-in-out;
+  -ms-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
 }

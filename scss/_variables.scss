@@ -21,6 +21,7 @@ $baseFontSize: 20;
 $baseLineHeight: 2.25;
 $baseLine: $baseFontSize * $baseLineHeight;
 $baseLineInEms: $baseLine / $baseFontSize;
+$base-line: 1.65em;
 
 // Heading
 $h1FontSize: $baseFontSize + 22px; // 36px
@@ -37,7 +38,7 @@ $h4SubheadingFontSize: $baseFontSize + 0px; // 14px
 $h5SubheadingFontSize: $baseFontSize - 2px; // 12px
 
 // Font size
-$superSmallFontSize: $baseFontSize - 6px; // 10px
+$superSmallFontSize: $baseFontSize - 8px; // 10px
 $smallFontSize: $baseFontSize - 2px; // 12px
 $leadFontSize: $baseFontSize + 4px; // 18px
 $bigFontSize: $baseFontSize + 4px; // 18px
@@ -52,7 +53,7 @@ $colorGreen: #159776;
 $colorYellow: #fddc43;
 
 // LinkColor
-$colorLink: rgba(0,0,0,.8);
+$colorLink: rgba(0,0,0,1);
 $colorLinkHover: rgba(182,152,83,1);
 
 // Forms

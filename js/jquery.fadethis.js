@@ -14,7 +14,7 @@
     Plugin.prototype = {
         globals: {
             pluginName: "fadeThis",
-            bufferTime: 100,
+            bufferTime: 0,
         },
         defaults: {
             baseName:       "slide-",
@@ -22,7 +22,7 @@
             easing:         "swing",
             offset:         0,
             reverse:        false,
-            distance:       200,
+            distance:       10,
             scrolledIn:     null,
             scrolledOut:    null
         },
