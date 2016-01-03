@@ -8322,6 +8322,7 @@ body {
 
 .header-main .header-top {
   max-width: 1200px;
+  padding-bottom: 1.65em;
   padding-top: 1.65em;
 }
 
@@ -8360,7 +8361,7 @@ body {
 .subpage .header-mid.subpage-banner h1 {
   color: white;
   text-transform: uppercase;
-  letter-spacing: .05em;
+  letter-spacing: .1em;
 }
 
 .subpage .header-mid.subpage-banner h1::before {
@@ -8394,15 +8395,16 @@ body {
 }
 
 .subpage .header-mid.lw {
-  background: url("../img/lw-header.jpg") 50% 50% no-repeat;
-  background: #b69853;
-  color: rgba(255, 255, 255, 0.8);
+  background: url("../img/lw-interactive-header.png") 50% 50% no-repeat;
+  background: #000;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .header-mid h1 {
   font-size: 1.75rem;
   font-weight: 800;
   color: #b69853;
+  letter-spacing: .1rem;
   line-height: 2.5rem;
   margin-bottom: .5rem;
   text-transform: uppercase;
@@ -8429,6 +8431,11 @@ body {
       position: absolute;
       width: 50px;
     }*/
+}
+
+.subpage .header-mid h1 {
+  font-size: 3rem;
+  line-height: 3rem;
 }
 
 .header-mid h1 strong {
@@ -8673,15 +8680,17 @@ body {
 .subpage .ui.grid.project-item a {
   border-bottom: 1px solid rgba(255, 255, 255, 0);
   color: rgba(255, 255, 255, 0.75);
+  display: block;
   letter-spacing: .25rem;
-  padding: 0;
+  padding: 1.25rem;
   text-decoration: none;
   text-transform: uppercase;
+  height: 100%;
+  width: 100%;
 }
 
 .subpage .ui.grid.project-item a:hover {
   color: white;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .column-right {

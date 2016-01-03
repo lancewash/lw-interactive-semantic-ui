@@ -107,6 +107,7 @@ main {
   }
   .header-top {
     max-width: 1200px;
+    padding-bottom: $base-line;
     padding-top: $base-line;
   }
   .grid {
@@ -168,7 +169,7 @@ main {
       h1 {
             color: rgba(255,255,255,1);
             text-transform: uppercase;
-            letter-spacing: .05em;
+            letter-spacing: .1em;
 
             &::before {
               border-bottom: 1px solid rgba(255,255,255,.5);
@@ -209,9 +210,10 @@ main {
     }
 
     &.lw {
-      background: url("../img/lw-header.jpg") 50% 50% no-repeat;
-      background: rgba(182,152,83,1);
-      color: rgba(255,255,255,.8);
+      background: url("../img/lw-interactive-header.png") 50% 50% no-repeat;
+      background: #000;
+      //background: rgba(182,152,83,1);
+      color: rgba(0,0,0,.8);
     }
   }
 
@@ -219,9 +221,15 @@ main {
     font-size: 1.75rem;
     font-weight: 800;
     color: rgba(182,152,83,1);
+    letter-spacing: .1rem;
     line-height: 2.5rem;
     margin-bottom: .5rem;
     text-transform: uppercase;letter-spacing: .1rem;
+
+    .subpage & {
+      font-size: 3rem;
+      line-height: 3rem;
+    }
     
     strong {
       color: rgba(0,0,0,.75);
@@ -563,6 +571,7 @@ main {
       }
       &.lw {
         background: rgba(182,152,83,1);
+        //background: url("../img/lw-interactive-header.png") no-repeat;
       }
       &.mc {
         background: rgba(0,0,0,1);
@@ -573,17 +582,19 @@ main {
         //border: 1px solid rgba(255,255,255,.5);
         border-bottom: 1px solid rgba(255,255,255,0);
         color: rgba(255,255,255,.75);
+        display: block;
         letter-spacing: .25rem;
-        padding: 0;
+        padding: 1.25rem;
         //padding: .1rem 1rem;
         text-decoration: none;
         text-transform: uppercase;
-        //width: 260px;
+        height: 100%;
+        width: 100%;
 
         &:hover {
           //background: rgba(255,255,255,.25);
           color: rgba(255,255,255,1);
-          border-bottom: 1px solid rgba(255,255,255,.5);
+          //border-bottom: 1px solid rgba(255,255,255,.5);
         }
       }
   }
