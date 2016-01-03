@@ -8150,7 +8150,7 @@ figure.hover-animate.mc figcaption::before {
 
 figure.hover-animate h2 {
   position: absolute;
-  top: 90%;
+  top: 80%;
   left: 0;
   width: 100%;
   color: #484c61;
@@ -8158,6 +8158,10 @@ figure.hover-animate h2 {
   transition: transform 0.35s, color 0.35s;
   -webkit-transform: translate3d(0, -50%, 0);
   transform: translate3d(0, -50%, 0);
+}
+
+figure.hover-animate.dark:hover h2 {
+  color: #fff;
 }
 
 figure.hover-animate figcaption::before,
@@ -8640,6 +8644,10 @@ body {
   padding: 2rem;
   text-transform: uppercase;
   width: 100%;
+}
+
+.home .project-item .dark h2 {
+  color: rgba(0, 0, 0, 0.75);
 }
 
 .subpage .ui.grid.project-item {

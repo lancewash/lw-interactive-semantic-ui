@@ -539,6 +539,13 @@ main {
     text-transform: uppercase;
     width: 100%;
   }
+  .dark h2 {
+    color: rgba(0,0,0,.75);
+    
+    //.hover-animate:hover {
+    //  color: #fff !important;
+    //}
+  }
 }
 &.subpage {
 

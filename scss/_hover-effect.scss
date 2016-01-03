@@ -39,7 +39,7 @@ figure.hover-animate.mc figcaption::before {
 }
 figure.hover-animate h2 {
   position: absolute;
-  top: 90%;
+  top: 80%;
   left: 0;
   width: 100%;
   color: #484c61;
@@ -48,7 +48,9 @@ figure.hover-animate h2 {
   -webkit-transform: translate3d(0,-50%,0);
   transform: translate3d(0,-50%,0);
 }
-
+figure.hover-animate.dark:hover  h2 {
+  color: #fff;
+}
 figure.hover-animate figcaption::before,
 figure.hover-animate p {
   color: rgba(255, 255, 255, 1);
