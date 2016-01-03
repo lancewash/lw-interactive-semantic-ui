@@ -1,5 +1,6 @@
 /* Overlay style */
 .overlay {
+  font-family: $mainNavFontFamily;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -57,14 +58,20 @@
 
 .overlay ul li a {
   border-bottom: 1px solid rgba(0,0,0,.05);
-  font-size: 1.25rem;
-  font-weight: 100;
+  font-size: 1rem;
+  font-weight: 500;
   display: block;
   color: rgba(0,0,0,.75);
   padding: 1rem 0;
   -webkit-transition: color 0.2s;
   text-decoration: none;
   transition: color 0.2s;
+
+  span {
+    color: #b69853;
+    font-size: 75%;
+    margin-right: $base-line / 2;
+  }
 
   //&:hover ul {
   //  opacity: .1;

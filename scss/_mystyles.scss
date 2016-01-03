@@ -106,7 +106,8 @@ main {
     color: #B69853;
   }
   .header-top {
-    max-width: 1440px;
+    max-width: 1200px;
+    padding-top: $base-line;
   }
   .grid {
     margin: 0 auto;
