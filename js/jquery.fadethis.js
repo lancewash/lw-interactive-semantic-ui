@@ -18,11 +18,11 @@
         },
         defaults: {
             baseName:       "slide-",
-            speed:          1000,
+            speed:          1500,
             easing:         "swing",
             offset:         0,
             reverse:        false,
-            distance:       10,
+            distance:       25,
             scrolledIn:     null,
             scrolledOut:    null
         },

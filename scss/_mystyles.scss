@@ -321,6 +321,19 @@ main {
     .project-img {
       background: url("../img/projects/gifted-scholars-half-high.jpg") no-repeat top left;
       min-height: 1000px;
+
+      img {
+        position: absolute !important;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+
+      .centered & {
+
+      }
     }
 
   }
@@ -355,7 +368,7 @@ main {
     font-family: $baseFontFamily;
     font-size: .75rem;
     line-height: 2;
-    padding: 6em !important;
+    padding: 8rem !important;
     text-align: left;
   }
   

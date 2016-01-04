@@ -5,7 +5,12 @@ body {
   font-family: 'montserratregular';
 }
 h1 {
-  font-size: 1.15rem;
+  font-size: $h1FontSize;
+  //letter-spacing: 0.1em;
+  line-height: 1.6em;
+}
+h2 {
+  font-size: $h2FontSize;
   //letter-spacing: 0.1em;
   line-height: 1.6em;
 }

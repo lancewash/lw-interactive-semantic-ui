@@ -257,7 +257,12 @@ body {
 }
 
 h1 {
-  font-size: 1.15rem;
+  font-size: 42px;
+  line-height: 1.6em;
+}
+
+h2 {
+  font-size: 34px;
   line-height: 1.6em;
 }
 
@@ -8509,6 +8514,15 @@ body {
   min-height: 1000px;
 }
 
+.projects .ui.grid .project-img img {
+  position: absolute !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 .projects .column {
   padding: 0 !important;
 }
@@ -8537,7 +8551,7 @@ body {
   font-family: "merriweather_lightregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .75rem;
   line-height: 2;
-  padding: 6em !important;
+  padding: 8rem !important;
   text-align: left;
 }
 
