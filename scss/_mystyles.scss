@@ -51,7 +51,7 @@ body {
 
 .page-wrap, main {
   background: rgba(255,255,255,1);
-  max-width: 1600px;
+  max-width: 1680px;
   margin: 0 auto;
 }
 
@@ -80,7 +80,7 @@ main {
   //padding: 0 4em;
 
   .subpage & {
-    height: 100vh;
+    height: 420px;
     margin-bottom: 0;
   }
   &:before, &:after {
@@ -106,7 +106,7 @@ main {
     color: #B69853;
   }
   .header-top {
-    max-width: 1200px;
+    max-width: 96em;
     padding-bottom: $base-line;
     padding-top: $base-line;
   }
@@ -144,7 +144,7 @@ main {
 }
 
 .header-top {
-  height: 15vh;
+  height: 120px;
 }
 .header-mid {
   height: 65vh;
@@ -152,7 +152,7 @@ main {
   margin-top: 0 !important;
   
   .subpage & {
-    height: 75vh;
+    height: 300px;
 
     &.subpage-banner {
 
@@ -211,7 +211,7 @@ main {
 
     &.lw {
       background: url("../img/lw-interactive-header.png") 50% 50% no-repeat;
-      background: #000;
+      //background: #000;
       //background: rgba(182,152,83,1);
       color: rgba(0,0,0,.8);
     }
@@ -319,7 +319,7 @@ main {
     }
 
     .project-img {
-      background: url("../img/projects/gifted-scholars-half.jpg") no-repeat top left;
+      background: url("../img/projects/gifted-scholars-half-high.jpg") no-repeat top left;
       min-height: 1000px;
     }
 
@@ -562,6 +562,7 @@ main {
 
     &.project-item {
       margin: 0;
+      //height: 40vh;
 
       &.fabc {
         background: #3c0308;
