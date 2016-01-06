@@ -204,7 +204,7 @@ main {
     }
 
     &.mc {
-      background: url("../img/music-choice-header.png") 50% 50% no-repeat;
+      background: url("../img/music-choice-header.png") 0 0 no-repeat;
       //background: #323232;
       color: rgba(255,255,255,.8);
     }
@@ -329,6 +329,12 @@ main {
         left: 0;
         right: 0;
         margin: auto;
+      }
+      
+      h3 {
+        text-align: center;
+        margin-top: 80px;
+        color: #fff;
       }
 
       .centered & {
@@ -575,6 +581,11 @@ main {
 
     &.project-item {
       margin: 0;
+      
+      &.mc-bg {
+        background: #323232;
+      }
+
       //height: 40vh;
 
       &.fabc {

@@ -267,7 +267,9 @@ h2 {
 }
 
 h1, h2, h3 {
+  font-family: 'montserratregular';
   font-weight: 100;
+  text-transform: uppercase;
 }
 
 p, li, a {
@@ -8395,7 +8397,7 @@ body {
 }
 
 .subpage .header-mid.mc {
-  background: url("../img/music-choice-header.png") 50% 50% no-repeat;
+  background: url("../img/music-choice-header.png") 0 0 no-repeat;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -8521,6 +8523,12 @@ body {
   left: 0;
   right: 0;
   margin: auto;
+}
+
+.projects .ui.grid .project-img h3 {
+  text-align: center;
+  margin-top: 80px;
+  color: #fff;
 }
 
 .projects .column {
@@ -8672,6 +8680,10 @@ body {
 
 .subpage .ui.grid.project-item {
   margin: 0;
+}
+
+.subpage .ui.grid.project-item.mc-bg {
+  background: #323232;
 }
 
 .subpage .ui.grid.project-item.fabc {
