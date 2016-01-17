@@ -7,7 +7,6 @@
     <script src="js/modernizr.custom.js"></script>
 </head>
 <body class="home">
-
 <div class="page-wrap animsition">
     <header class="header-main">
         <div class="[ ui grid ] header-top">
@@ -18,7 +17,8 @@
                 <nav class="navbar">
                     <ul>
                         <li><a id="trigger-overlay">Projects</a></li>
-                        <li><a class="animsition-link" href="">Case Studies</a></li>
+                        <li><a class="animsition-link" data-animsition-out="fade-out-right"
+                               data-animsition-out-duration="2000" href="">Case Studies</a></li>
                         <!--<li class="button">About</li>-->
                         <!--<li class="button">Resources</li>-->
                     </ul>
@@ -285,26 +285,21 @@
 <script>
     (function () {
         var docElem = window.document.documentElement, didScroll, scrollPosition;
-
         // trick to prevent scrolling when opening/closing button
         function noScrollFn() {
             window.scrollTo(scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0);
         }
-
         function noScroll() {
             window.removeEventListener('scroll', scrollHandler);
             window.addEventListener('scroll', noScrollFn);
         }
-
         function scrollFn() {
             window.addEventListener('scroll', scrollHandler);
         }
-
         function canScroll() {
             window.removeEventListener('scroll', noScrollFn);
             scrollFn();
         }
-
         function scrollHandler() {
             if (!didScroll) {
                 didScroll = true;
