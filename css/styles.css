@@ -257,12 +257,19 @@ body {
 }
 
 h1 {
-  font-size: 1.15rem;
+  font-size: 42px;
+  line-height: 1.6em;
+}
+
+h2 {
+  font-size: 34px;
   line-height: 1.6em;
 }
 
 h1, h2, h3 {
+  font-family: 'montserratregular';
   font-weight: 100;
+  text-transform: uppercase;
 }
 
 p, li, a {
@@ -4913,7 +4920,7 @@ navigation
 }
 
 .text-centered {
-  text-align: center;
+  text-align: center !important;
 }
 
 .text-right {
@@ -6224,7 +6231,8 @@ navigation
  * License : MIT
  * Author : blivesta (http://blivesta.com/)
  */
-.animsition, .animsition-overlay {
+.animsition,
+.animsition-overlay {
   position: relative;
   opacity: 0;
   -webkit-animation-fill-mode: both;
@@ -6239,7 +6247,8 @@ navigation
   background-color: #ddd;
 }
 
-.animsition-loading, .animsition-loading:after {
+.animsition-loading,
+.animsition-loading:after {
   width: 2pc;
   height: 2pc;
   position: fixed;
@@ -7063,7 +7072,8 @@ navigation
             transform-origin: center center;
     opacity: 0;
   }
-  0%, to {
+  0%,
+  to {
     -webkit-transform-origin: center center;
   }
   to {
@@ -7083,7 +7093,8 @@ navigation
             transform-origin: center center;
     opacity: 0;
   }
-  0%, to {
+  0%,
+  to {
     -webkit-transform-origin: center center;
   }
   to {
@@ -7108,7 +7119,8 @@ navigation
             transform-origin: center center;
     opacity: 1;
   }
-  0%, to {
+  0%,
+  to {
     -webkit-transform-origin: center center;
   }
   to {
@@ -7128,7 +7140,8 @@ navigation
             transform-origin: center center;
     opacity: 1;
   }
-  0%, to {
+  0%,
+  to {
     -webkit-transform-origin: center center;
   }
   to {
@@ -7153,7 +7166,8 @@ navigation
             transform-origin: center center;
     opacity: 0;
   }
-  0%, to {
+  0%,
+  to {
     -webkit-transform-origin: center center;
   }
   to {
@@ -7173,7 +7187,8 @@ navigation
             transform-origin: center center;
     opacity: 0;
   }
-  0%, to {
+  0%,
+  to {
     -webkit-transform-origin: center center;
   }
   to {
@@ -7198,7 +7213,8 @@ navigation
             transform-origin: center center;
     opacity: 1;
   }
-  0%, to {
+  0%,
+  to {
     -webkit-transform-origin: center center;
   }
   to {
@@ -7218,7 +7234,8 @@ navigation
             transform-origin: center center;
     opacity: 1;
   }
-  0%, to {
+  0%,
+  to {
     -webkit-transform-origin: center center;
   }
   to {
@@ -7243,7 +7260,8 @@ navigation
             transform-origin: center center;
     opacity: 0;
   }
-  0%, to {
+  0%,
+  to {
     -webkit-transform-origin: center center;
   }
   to {
@@ -7263,7 +7281,8 @@ navigation
             transform-origin: center center;
     opacity: 0;
   }
-  0%, to {
+  0%,
+  to {
     -webkit-transform-origin: center center;
   }
   to {
@@ -7288,7 +7307,8 @@ navigation
             transform-origin: center center;
     opacity: 1;
   }
-  0%, to {
+  0%,
+  to {
     -webkit-transform-origin: center center;
   }
   to {
@@ -7308,7 +7328,8 @@ navigation
             transform-origin: center center;
     opacity: 1;
   }
-  0%, to {
+  0%,
+  to {
     -webkit-transform-origin: center center;
   }
   to {
@@ -7758,7 +7779,8 @@ navigation
     -webkit-transform: scale(0.7);
     transform: scale(0.7);
   }
-  50%, to {
+  50%,
+  to {
     opacity: 0;
   }
 }
@@ -7773,7 +7795,8 @@ navigation
     -webkit-transform: scale(0.7);
     transform: scale(0.7);
   }
-  50%, to {
+  50%,
+  to {
     opacity: 0;
   }
 }
@@ -7820,7 +7843,8 @@ navigation
     -webkit-transform: scale(0.95);
     transform: scale(0.95);
   }
-  50%, to {
+  50%,
+  to {
     opacity: 0;
   }
 }
@@ -7835,7 +7859,8 @@ navigation
     -webkit-transform: scale(0.95);
     transform: scale(0.95);
   }
-  50%, to {
+  50%,
+  to {
     opacity: 0;
   }
 }
@@ -7882,7 +7907,8 @@ navigation
     -webkit-transform: scale(0.4);
     transform: scale(0.4);
   }
-  50%, to {
+  50%,
+  to {
     opacity: 0;
   }
 }
@@ -7897,7 +7923,8 @@ navigation
     -webkit-transform: scale(0.4);
     transform: scale(0.4);
   }
-  50%, to {
+  50%,
+  to {
     opacity: 0;
   }
 }
@@ -8390,7 +8417,7 @@ body {
 }
 
 .subpage .header-mid.mc {
-  background: url("../img/music-choice-header.png") 50% 50% no-repeat;
+  background: url("../img/music-choice-header.png") 0 0 no-repeat;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -8509,6 +8536,21 @@ body {
   min-height: 1000px;
 }
 
+.projects .ui.grid .project-img img {
+  position: absolute !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.projects .ui.grid .project-img h3 {
+  text-align: center;
+  margin-top: 80px;
+  color: #fff;
+}
+
 .projects .column {
   padding: 0 !important;
 }
@@ -8537,7 +8579,7 @@ body {
   font-family: "merriweather_lightregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .75rem;
   line-height: 2;
-  padding: 6em !important;
+  padding: 8rem !important;
   text-align: left;
 }
 
@@ -8658,6 +8700,10 @@ body {
 
 .subpage .ui.grid.project-item {
   margin: 0;
+}
+
+.subpage .ui.grid.project-item.mc-bg {
+  background: #323232;
 }
 
 .subpage .ui.grid.project-item.fabc {
