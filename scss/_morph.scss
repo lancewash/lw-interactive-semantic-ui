@@ -123,6 +123,11 @@
   padding: 100px 50px;
   text-align: left;
 
+  img {
+    display: block;
+    margin: 0 auto 1em;
+  }
+
   ul, ol {
     margin-bottom: $base-line;
     padding-left: $base-line;
@@ -494,7 +499,7 @@
 }
 
 .morph-button-fixed > button {
-  border: 1px solid rgba(255,255,255,1);
+  border: 2px solid rgba(255,255,255,1);
   font-family: $mainNavFontFamily;
   font-size: $superSmallFontSize;
   z-index: 1000;
@@ -546,7 +551,7 @@
 }
 
 .morph-button-fixed.active > button {
-  border: 1px solid rgba(0,0,0,.25);
+  border: 2px solid rgba(0,0,0,.5);
   z-index: 2000;
 }
 
@@ -580,7 +585,7 @@
   background: rgba(255, 255, 255, 1);
   color: rgba(255,255,255,.9);
   color: rgba(0, 0, 0, .75);
-  border: 1px solid rgba(0,0,0, 1);
+  border: 2px solid rgba(0,0,0, 1);
 }
 
 .morph-button-overlay.open .morph-content {
