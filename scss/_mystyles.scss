@@ -6,6 +6,10 @@ body {
   //background: lighten($colorBody, 90%);
   overflow-x: hidden;
   background: rgba(0,0,0,1);
+  background-image: url("../img/body-bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   padding: 0 6px;
   
   &:before, &:after {
@@ -97,7 +101,17 @@ body {
   max-width: 1680px;
   margin: 0 auto;
 }
-
+.logo {
+  position: relative;
+  z-index: 999999;
+}
+//.modal {
+//
+//  img {
+//    display: block;
+//    margin: 0 auto 1em;
+//  }
+//}
 main {
   
   .home & {
@@ -151,7 +165,7 @@ main {
   .header-top {
     max-width: 96em;
     padding-bottom: $base-line;
-    padding-top: $base-line;
+    padding-top: $base-line * 1.25;
   }
   .grid {
     margin: 0 auto;
@@ -261,6 +275,8 @@ main {
   }
 
   h1 {
+    font-family: 'merriweather_lightregular';
+
     font-size: 1.75rem;
     font-weight: 800;
     color: rgba(182,152,83,1);
@@ -334,7 +350,7 @@ main {
   }
   p {
     font-family: 'merriweather_lightregular';
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     margin-top: .25rem;
     line-height: 2.25rem;
   }
@@ -520,34 +536,34 @@ main {
   //  //}
   //
   //}
-  span {
-    background: rgba(255, 255, 255, 1);
-    border: 1px solid rgba(182,152,83,.25);
-    display: block;
-    padding: 1em 0;
-    position: absolute;
-    bottom: 15%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 300px;
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -ms-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-
-    &:hover {
-      background: rgba(255, 255, 255, 1);
-      border-color: rgba(0,0,0,.25);
-      color: rgba(0,0,0,.5);
-      -webkit-transition: all .25s ease-in-out;
-      -moz-transition: all .25s ease-in-out;
-      -ms-transition: all .25s ease-in-out;
-      -o-transition: all .25s ease-in-out;
-      transition: all .25s ease-in-out;
-    }
-  }
+  //span {
+  //  background: rgba(255, 255, 255, 1);
+  //  border: 1px solid rgba(182,152,83,.25);
+  //  display: block;
+  //  padding: 1em 0;
+  //  position: absolute;
+  //  bottom: 15%;
+  //  left: 0;
+  //  right: 0;
+  //  margin: 0 auto;
+  //  width: 300px;
+  //  -webkit-transition: all 1s ease-in-out;
+  //  -moz-transition: all 1s ease-in-out;
+  //  -ms-transition: all 1s ease-in-out;
+  //  -o-transition: all 1s ease-in-out;
+  //  transition: all 1s ease-in-out;
+  //
+  //  &:hover {
+  //    background: rgba(255, 255, 255, 1);
+  //    border-color: rgba(0,0,0,.25);
+  //    color: rgba(0,0,0,.5);
+  //    -webkit-transition: all .25s ease-in-out;
+  //    -moz-transition: all .25s ease-in-out;
+  //    -ms-transition: all .25s ease-in-out;
+  //    -o-transition: all .25s ease-in-out;
+  //    transition: all .25s ease-in-out;
+  //  }
+  //}
   &.fabc {
     background: #3c0308;
     //background: #fff;
@@ -601,16 +617,30 @@ main {
   h2 {
     //color: rgba(0,0,0, 1);
     //margin: 4rem 0 0;
-    font-size: 1.5rem;
+    font-weight: 800;
+    border-top: 1px solid rgba(255,255,255,.5);
+    border-bottom: 1px solid rgba(255,255,255,.5);
+    font-size: 1.25rem;
     //background: rgba(0, 0, 0, .5);
     color: rgba(255,255,255,1);
     letter-spacing: .1rem;
-    padding: 2rem;
+    left: 10%;
+    padding: 1.5rem 0;
+    //position: relative;
     text-transform: uppercase;
-    width: 100%;
+    width: 80%;
+    
+    span {
+      font-weight: 100;
+      text-transform: none;
+    }
   }
   .dark h2 {
+    border-top: 1px solid rgba(0,0,0,.25) !important;
+    border-bottom: 1px solid rgba(0,0,0,.25) !important;
     color: rgba(0,0,0,.75);
+
+
     
     //.hover-animate:hover {
     //  color: #fff !important;

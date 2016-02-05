@@ -253,7 +253,7 @@ audio {
 
 body {
   color: rgba(0, 0, 0, 0.5);
-  font-family: 'montserratregular';
+  font-family: 'AvenirLTStd-Roman';
 }
 
 h1 {
@@ -267,7 +267,7 @@ h2 {
 }
 
 h1, h2, h3 {
-  font-family: 'montserratregular';
+  font-family: 'AvenirLTStd-Roman';
   font-weight: 100;
   text-transform: uppercase;
 }
@@ -278,6 +278,16 @@ p, li, a {
 
 /* =Fonts
 -----------------------------------------------------------------------------*/
+@font-face {
+  font-family: 'AvenirLTStd-Roman';
+  src: url("fonts/AvenirLTStd-Roman_gdi.eot");
+  src: url("fonts/AvenirLTStd-Roman_gdi.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirLTStd-Roman_gdi.woff") format("woff"), url("fonts/AvenirLTStd-Roman_gdi.ttf") format("truetype"), url("fonts/AvenirLTStd-Roman_gdi.svg#AvenirLTStd-Roman") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-25CA;
+}
+
 @font-face {
   font-family: 'merriweatherregular';
   src: url("fonts/merriweather-regular-webfont.eot");
@@ -3682,11 +3692,6 @@ i.icon.bed:before {
   text-align: left;
 }
 
-.content-style-overlay img {
-  display: block;
-  margin: 0 auto 1em;
-}
-
 .content-style-overlay ul, .content-style-overlay ol {
   margin-bottom: 1.65em;
   padding-left: 1.65em;
@@ -3702,7 +3707,7 @@ i.icon.bed:before {
 }
 
 .content-style-overlay p, li {
-  font-family: "merriweather_lightregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "AvenirLTStd-Roman", "merriweather_lightregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0 auto;
   line-height: 1.75;
 }
@@ -3984,6 +3989,7 @@ i.icon.bed:before {
 
 .morph-button.open .morph-content {
   pointer-events: auto;
+  transition: all .25s ease-in-out;
 }
 
 /* Common styles for overlay and modal type (fixed morph) */
@@ -3995,7 +4001,7 @@ i.icon.bed:before {
 
 .morph-button-fixed > button {
   border: 2px solid white;
-  font-family: "montserratregular";
+  font-family: "AvenirLTStd-Roman", "montserratregular";
   font-size: 12px;
   z-index: 1000;
   width: 100%;
@@ -4458,7 +4464,7 @@ i.icon.bed:before {
 
 /* Overlay style */
 .overlay {
-  font-family: "montserratregular";
+  font-family: "AvenirLTStd-Roman", "montserratregular";
   position: fixed;
   width: 100%;
   height: 100%;
@@ -4586,7 +4592,7 @@ i.icon.bed:before {
 .button {
   display: inline-block;
   vertical-align: top;
-  font-family: "montserratregular";
+  font-family: "AvenirLTStd-Roman", "montserratregular";
   font-size: 10px;
   font-weight: 600;
   letter-spacing: 0.15em;
@@ -4838,7 +4844,7 @@ navigation
   color: black;
   font-size: .75rem;
   font-weight: 800;
-  font-family: "montserratregular";
+  font-family: "AvenirLTStd-Roman", "montserratregular";
   letter-spacing: 0.25em;
   padding: 1rem 0;
   text-decoration: none;
@@ -6205,37 +6211,6 @@ navigation
   width: 100%;
   height: 100%;
   background-color: #ddd;
-}
-
-.animsition-loading,
-.animsition-loading:after {
-  width: 2pc;
-  height: 2pc;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-top: -1pc;
-  margin-left: -1pc;
-  border-radius: 50%;
-  z-index: 2;
-}
-
-.animsition-loading {
-  background-color: transparent;
-  border-top: 5px solid rgba(0, 0, 0, 0.2);
-  border-right: 5px solid rgba(0, 0, 0, 0.2);
-  border-bottom: 5px solid rgba(0, 0, 0, 0.2);
-  border-left: 5px solid #eee;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-duration: .8s;
-  animation-duration: .8s;
-  -webkit-animation-name: animsition-loading;
-  animation-name: animsition-loading;
 }
 
 @-webkit-keyframes animsition-loading {
@@ -8103,7 +8078,7 @@ figure.hover-animate figcaption::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 75%);
+  background: linear-gradient(to bottom, transparent 0%, black 100%);
   content: '';
   opacity: 0;
   -webkit-transform: translate3d(0, 50%, 0);
@@ -8111,32 +8086,32 @@ figure.hover-animate figcaption::before {
 }
 
 figure.hover-animate.n2n figcaption::before {
-  border-bottom: 50px solid #b2232f;
+  border-bottom: 40px solid #b2232f;
 }
 
 figure.hover-animate.gs figcaption::before {
-  border-bottom: 50px solid #455a64;
+  border-bottom: 40px solid #455a64;
 }
 
 figure.hover-animate.fabc figcaption::before {
-  border-bottom: 50px solid #3c0308;
+  border-bottom: 40px solid #3c0308;
 }
 
 figure.hover-animate.sii figcaption::before {
-  border-bottom: 50px solid #2FADD5;
+  border-bottom: 40px solid #2FADD5;
 }
 
 figure.hover-animate.lw figcaption::before {
-  border-bottom: 50px solid #b69853;
+  border-bottom: 40px solid #b69853;
 }
 
 figure.hover-animate.mc figcaption::before {
-  border-bottom: 50px solid #323232;
+  border-bottom: 40px solid #323232;
 }
 
 figure.hover-animate h2 {
   position: absolute;
-  top: 80%;
+  top: 50%;
   left: 0;
   width: 100%;
   color: #484c61;
@@ -8148,6 +8123,8 @@ figure.hover-animate h2 {
 }
 
 figure.hover-animate.dark:hover h2 {
+  border-top: 1px solid rgba(255, 255, 255, 0.25) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25) !important;
   color: #fff;
 }
 
@@ -8162,7 +8139,7 @@ figure.hover-animate p {
 
 figure.hover-animate p {
   position: absolute;
-  bottom: 45%;
+  bottom: 21%;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -8175,10 +8152,12 @@ figure.hover-animate p {
 }
 
 figure.hover-animate p a {
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   color: white;
   display: block;
-  padding: 1em;
+  font-size: .85rem;
+  letter-spacing: .2rem;
+  padding: 1.5em 0;
   text-decoration: none;
 }
 
@@ -8201,12 +8180,27 @@ figure.hover-animate:hover p {
   transform: translate3d(0, 0, 0);
 }
 
+figure.hover-animate.lw:hover,
+figure.hover-animate.mc:hover {
+  transition: all 1s ease-in-out;
+}
+
+figure.hover-animate.lw:hover img,
+figure.hover-animate.mc:hover img {
+  transition: all .25s ease-in-out;
+  opacity: 0;
+}
+
 /*
 My Styles
 */
 body {
   overflow-x: hidden;
   background: black;
+  background-image: url("../img/body-bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   padding: 0 6px;
 }
 
@@ -8259,6 +8253,11 @@ body {
   margin: 0 auto;
 }
 
+.logo {
+  position: relative;
+  z-index: 999999;
+}
+
 .home main {
   background: #fff;
 }
@@ -8282,7 +8281,7 @@ body {
 .header-main .header-top {
   max-width: 96em;
   padding-bottom: 1.65em;
-  padding-top: 1.65em;
+  padding-top: 2.0625em;
 }
 
 .header-main .grid {
@@ -8357,6 +8356,7 @@ body {
 }
 
 .header-mid h1 {
+  font-family: 'merriweather_lightregular';
   font-size: 1.75rem;
   font-weight: 800;
   color: #b69853;
@@ -8433,7 +8433,7 @@ body {
 
 .header-mid p {
   font-family: 'merriweather_lightregular';
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   margin-top: .25rem;
   line-height: 2.25rem;
 }
@@ -8495,7 +8495,7 @@ body {
 }
 
 .project-details p {
-  font-family: "merriweather_lightregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "AvenirLTStd-Roman", "merriweather_lightregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.8rem;
   text-align: center;
 }
@@ -8506,7 +8506,7 @@ body {
 }
 
 .subpage .project-title {
-  font-family: "merriweather_lightregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "AvenirLTStd-Roman", "merriweather_lightregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .75rem;
   line-height: 2;
   padding: 8rem !important;
@@ -8551,27 +8551,6 @@ body {
   text-align: center;
 }
 
-.home .project-item span {
-  background: white;
-  border: 1px solid rgba(182, 152, 83, 0.25);
-  display: block;
-  padding: 1em 0;
-  position: absolute;
-  bottom: 15%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: 300px;
-  transition: all 1s ease-in-out;
-}
-
-.home .project-item span:hover {
-  background: white;
-  border-color: rgba(0, 0, 0, 0.25);
-  color: rgba(0, 0, 0, 0.5);
-  transition: all .25s ease-in-out;
-}
-
 .home .project-item.fabc {
   background: #3c0308;
   color: white;
@@ -8612,15 +8591,26 @@ body {
 }
 
 .home .project-item h2 {
-  font-size: 1.5rem;
+  font-weight: 800;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 1.25rem;
   color: white;
   letter-spacing: .1rem;
-  padding: 2rem;
+  left: 10%;
+  padding: 1.5rem 0;
   text-transform: uppercase;
-  width: 100%;
+  width: 80%;
+}
+
+.home .project-item h2 span {
+  font-weight: 100;
+  text-transform: none;
 }
 
 .home .project-item .dark h2 {
+  border-top: 1px solid rgba(0, 0, 0, 0.25) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25) !important;
   color: rgba(0, 0, 0, 0.75);
 }
 

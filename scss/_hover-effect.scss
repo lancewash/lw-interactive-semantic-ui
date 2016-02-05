@@ -12,34 +12,35 @@ figure.hover-animate figcaption::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 75%);
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 75%);
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
   content: '';
   opacity: 0;
   -webkit-transform: translate3d(0,50%,0);
   transform: translate3d(0,50%,0);
+
 }
 figure.hover-animate.n2n figcaption::before {
-  border-bottom: 50px solid #b2232f;
+  border-bottom: 40px solid #b2232f;
 }
 figure.hover-animate.gs figcaption::before {
-  border-bottom: 50px solid #455a64;
+  border-bottom: 40px solid #455a64;
 }
 figure.hover-animate.fabc figcaption::before {
-  border-bottom: 50px solid #3c0308;
+  border-bottom: 40px solid #3c0308;
 }
 figure.hover-animate.sii figcaption::before {
-  border-bottom: 50px solid #2FADD5;
+  border-bottom: 40px solid #2FADD5;
 }
 figure.hover-animate.lw figcaption::before {
-  border-bottom: 50px solid #b69853;
+  border-bottom: 40px solid #b69853;
 }
 figure.hover-animate.mc figcaption::before {
-  border-bottom: 50px solid #323232;
+  border-bottom: 40px solid #323232;
 }
 figure.hover-animate h2 {
   position: absolute;
-  top: 80%;
+  top: 50%;
   left: 0;
   width: 100%;
   color: #484c61;
@@ -49,6 +50,8 @@ figure.hover-animate h2 {
   transform: translate3d(0,-50%,0);
 }
 figure.hover-animate.dark:hover  h2 {
+  border-top: 1px solid rgba(255,255,255,.25) !important;
+  border-bottom: 1px solid rgba(255,255,255,.25) !important;
   color: #fff;
 }
 figure.hover-animate figcaption::before,
@@ -61,7 +64,7 @@ figure.hover-animate p {
 
 figure.hover-animate p {
   position: absolute;
-  bottom: 45%;
+  bottom: 21%;
 
   margin: 0 auto;
   left: 0;
@@ -83,10 +86,12 @@ figure.hover-animate p {
   //}
 
   a {
-    border: 1px solid rgba(255,255,255,1);
+    border: 1px solid rgba(255,255,255,.5);
     color: rgba(255, 255, 255, 1);
     display: block;
-    padding: 1em;
+    font-size: .85rem;
+    letter-spacing: .2rem;
+    padding: 1.5em 0;
     text-decoration: none;
 
     &:hover {
@@ -96,7 +101,18 @@ figure.hover-animate p {
     }
   }
 }
-
+//figure.hover-animate {
+//
+//  img {
+//    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+//    filter: grayscale(100%);
+//
+//    &:hover {
+//      -webkit-filter: none;
+//      filter: none;
+//    }
+//  }
+//}
 figure.hover-animate:hover h2 {
   color: #fff;
   -webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
@@ -110,7 +126,30 @@ figure.hover-animate:hover p {
   transform: translate3d(0,0,0);
 }
 
+figure.hover-animate.lw,
+figure.hover-animate.mc {
 
+
+
+  &:hover {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+
+    img {
+
+      -webkit-transition: all .25s ease-in-out;
+      -moz-transition: all .25s ease-in-out;
+      -ms-transition: all .25s ease-in-out;
+      -o-transition: all .25s ease-in-out;
+      transition: all .25s ease-in-out;
+      opacity: 0;
+    }
+  }
+
+}
 ///* Media queries */
 //@media screen and (max-width: 50em) {
 //  .content {

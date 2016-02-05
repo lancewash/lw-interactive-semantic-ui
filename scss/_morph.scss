@@ -123,10 +123,6 @@
   padding: 100px 50px;
   text-align: left;
 
-  img {
-    display: block;
-    margin: 0 auto 1em;
-  }
 
   ul, ol {
     margin-bottom: $base-line;
@@ -489,6 +485,11 @@
 
 .morph-button.open .morph-content {
   pointer-events: auto;
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -ms-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
 }
 
 /* Common styles for overlay and modal type (fixed morph) */
@@ -636,6 +637,10 @@
   -webkit-transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
   transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
 }
+
+//.noscroll .header-top {
+//  background: url("../img/fade.png") repeat-x top left;
+//}
 
 /* Colors and sizes for individual modals */
 .morph-button.morph-button-modal-1,
