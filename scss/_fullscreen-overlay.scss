@@ -66,6 +66,9 @@
   -webkit-transition: color 0.2s;
   text-decoration: none;
   transition: color 0.2s;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
 
   span {
     color: #b69853;
@@ -77,13 +80,24 @@
   //  opacity: .1;
   //}
 }
+.overlay ul {
 
+  &:hover a {
+    color: rgba(0,0,0,.75);
+    opacity: .25;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
 .overlay ul li a:hover,
 .overlay ul li a:focus {
   border-bottom: 1px solid rgba(182,152,83,.1);
-  color: #b69853;
-
-
+  //color: #b69853;
 }
 
 /* Effects */
