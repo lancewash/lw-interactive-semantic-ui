@@ -629,7 +629,7 @@ main {
     //position: relative;
     text-transform: uppercase;
     width: 80%;
-    
+
     span {
       font-weight: 100;
       text-transform: none;
@@ -647,6 +647,7 @@ main {
     //}
   }
 }
+
 &.subpage {
 
   .ui.grid {
@@ -775,7 +776,10 @@ main {
   .morph-button-fixed, .morph-button-fixed .morph-content {
     width: 150px;
   }
-
+  .ui.grid > .column:not(.row), .ui.grid > .row > .column {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .ui.column.grid > [class*="eight wide"].column,
   .ui.grid > .column.row > [class*="eight wide"].column,
   .ui.grid > .row > [class*="eight wide"].column,
@@ -804,10 +808,10 @@ main {
 @media only screen and (max-width: 600px) {
 
   .header-main {
-    padding-top: 2em;
+    //padding-top: 2em;
   }
   .header-top {
-    height: 150px;
+    height: 180px;
   }
   .header-mid {
     height: 320px;

@@ -20,6 +20,7 @@ figure.hover-animate figcaption::before {
   transform: translate3d(0,50%,0);
 
 }
+
 figure.hover-animate.n2n figcaption::before {
   border-bottom: 40px solid #b2232f;
 }
@@ -50,9 +51,13 @@ figure.hover-animate h2 {
   transform: translate3d(0,-50%,0);
 }
 figure.hover-animate.dark:hover  h2 {
-  border-top: 1px solid rgba(255,255,255,.25) !important;
-  border-bottom: 1px solid rgba(255,255,255,.25) !important;
+  //border-top: 1px solid rgba(255,255,255,.25) !important;
+  //border-bottom: 1px solid rgba(255,255,255,.25) !important;
+  border: none !important;
   color: #fff;
+}
+figure.hover-animate:hover h2 {
+  border: none;
 }
 figure.hover-animate figcaption::before,
 figure.hover-animate p {
