@@ -166,6 +166,10 @@ main {
     max-width: 96em;
     padding-bottom: $base-line;
     padding-top: $base-line * 1.25;
+
+    .home & {
+      padding-bottom: 0;
+    }
   }
   .grid {
     margin: 0 auto;

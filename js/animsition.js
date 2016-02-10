@@ -13,9 +13,9 @@
   var __ = {
     init: function(options){
       options = $.extend({
-        inClass               :   'zoom-in-sm',
-        outClass              :   'zoom-out-sm',
-        inDuration            :    2500,
+        inClass               :   'fade-in',
+        outClass              :   'fade-out',
+        inDuration            :    3500,
         outDuration           :    1500,
         linkElement           :   '.animsition-link',
         // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
@@ -24,7 +24,7 @@
         loadingClass          :   'animsition-loading',
         loadingInner          :   '', // e.g '<img src="loading.svg" />'
         timeout               :   false,
-        timeoutCountdown      :   2500,
+        timeoutCountdown      :   3500,
         onLoadEvent           :   true,
         browser               : [ 'animation-duration', '-webkit-animation-duration'],
         // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
