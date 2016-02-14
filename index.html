@@ -25,6 +25,7 @@
             <div class="[ ten wide column centered ] text-centered slide-top">
                 <h1><!--<strong><span>L</span>W <span>Inter</span>active</strong><br>-->
                     Producing outstanding<br>interactive experiences with the<br>highest possible standards</h1>
+
                 <p>I focus on clean simple design along with clean modular code<br>
                     to deliver an exceptional web experience for all users.<br>
                     <em>From Concept to Completion... I Deliver...</em></p>
@@ -56,30 +57,30 @@
             </div>-->
 
 
-<!--
-            <div class="morph-button morph-button-overlay morph-button-fixed">
-                <button type="button">About</button>
-                <div class="morph-content">
-                    <div>
-                        <div class="content-style-overlay">
-                            <button class="icon remove icon-close">Close</button>
+            <!--
+                        <div class="morph-button morph-button-overlay morph-button-fixed">
+                            <button type="button">About</button>
+                            <div class="morph-content">
+                                <div>
+                                    <div class="content-style-overlay">
+                                        <button class="icon remove icon-close">Close</button>
 
-                            <h2>About Coriander</h2>
+                                        <h2>About Coriander</h2>
 
-                            <p>info info info info info info info info info info info info info info info info info info
-                                info info info info info info info info info info info info info info info info info
-                                info info info info info info info info info info info info info info info info info
-                                info info.</p>
+                                        <p>info info info info info info info info info info info info info info info info info info
+                                            info info info info info info info info info info info info info info info info info
+                                            info info info info info info info info info info info info info info info info info
+                                            info info.</p>
 
-                            <p>info info info info info info info info info info info info info info info info info info
-                                info info info info info info info info info info info info info info info info info
-                                info info info info info info info info info info info info info info info info info
-                                info info.</p>
+                                        <p>info info info info info info info info info info info info info info info info info info
+                                            info info info info info info info info info info info info info info info info info
+                                            info info info info info info info info info info info info info info info info info
+                                            info info.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
--->
+            -->
 
 
             <div class="morph-button morph-button-overlay morph-button-fixed">
@@ -159,7 +160,7 @@
                                 integrating design and complex navigation structure and developing into a WordPress CMS
                                 theme.</p>
 
-                                <p>Tools used: Mac, Adobe Fireworks, Adobe Photoshop, Adobe Illustrator, HTML5, CSS3,
+                            <p>Tools used: Mac, Adobe Fireworks, Adobe Photoshop, Adobe Illustrator, HTML5, CSS3,
                                 Responsive Design, Sublime Text, Wordpress CMS</p>
                         </div>
                     </div>
@@ -179,7 +180,7 @@
                     <img src="img/projects/n2n-cdc-half.jpg" alt=""/>
                     <figcaption>
                         <h2>Neighbor to Neighbor<br>
-                        <span>Community Development Corp.</span>
+                            <span>Community Development Corp.</span>
                         </h2>
 
                         <p><a href="#">Project Details</a></p>
@@ -193,7 +194,7 @@
                     <img src="img/projects/gifted-scholars-half.jpg" alt=""/>
                     <figcaption>
                         <h2>Gifted Scholars<br>
-                        <span>Leadership Program</span></h2>
+                            <span>Leadership Program</span></h2>
 
                         <p><a href="#">Project Details</a></p>
                         <!--<a href="#">Project Details</a>-->
@@ -221,18 +222,16 @@
                     <img src="img/projects/sweet-it-is-half.jpg" alt=""/>
                     <figcaption>
                         <h2>Sweet It Is!<br>
-                        <span>Gourmet Bakery</span></h2>
+                            <span>Gourmet Bakery</span></h2>
 
                         <p><a href="#">Project Details</a></p>
                         <!--<a href="#">Project Details</a>-->
                     </figcaption>
                 </figure>
-
             </div>
         </div>
         <div class="ui stackable equal width grid project-item">
             <div class="column">
-
                 <figure class="hover-animate lw dark">
                     <img src="img/projects/lw-interactive-half.jpg" alt=""/>
                     <figcaption>
@@ -261,14 +260,26 @@
         <div class="overlay overlay-hugeinc">
             <button type="button" class="overlay-close">Close</button>
 
-            <nav>
+            <nav class="project-item">
                 <ul>
-                    <li><a href="project-3.html"><span>01. </span> Neighbor to Neighbor Community Development Corp.</a></li>
-                    <li><a href="#"><span>02. </span> Sweet It Is!</a></li>
-                    <li><a href="#"><span>03. </span> Music Choice</a></li>
-                    <li><a href="#"><span>04. </span> First African Baptist Church</a></li>
-                    <li><a href="#"><span>05. </span> Gifted Scholars</a></li>
-                    <li><a href="#">Case Studies</a></li>
+                    <li class="column">
+                        <!--<figure class="hover-animate n2n">
+                            <img src="img/projects/n2n-cdc-half.jpg" alt=""/>
+                            <figcaption>
+                                <h2>Neighbor to Neighbor<br>
+                                    <span>Community Development Corp.</span>
+                                </h2>
+
+                                <p><a href="#">Project Details</a></p>
+                                &lt;!&ndash;<a href="#">Project Details</a>&ndash;&gt;
+                            </figcaption>
+                        </figure>-->
+                    </li>
+                    <li class="column"><a href="#">Sweet It Is!</a></li>
+                    <li class="column"><a href="#">Music Choice</a></li>
+                    <li class="column"><a href="#">First African Baptist Church</a></li>
+                    <li class="column"><a href="#">Gifted Scholars</a></li>
+                    <li class="column"><a href="#">Case Studies</a></li>
                 </ul>
             </nav>
         </div>
@@ -293,17 +304,21 @@
         function noScrollFn() {
             window.scrollTo(scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0);
         }
+
         function noScroll() {
             window.removeEventListener('scroll', scrollHandler);
             window.addEventListener('scroll', noScrollFn);
         }
+
         function scrollFn() {
             window.addEventListener('scroll', scrollHandler);
         }
+
         function canScroll() {
             window.removeEventListener('scroll', noScrollFn);
             scrollFn();
         }
+
         function scrollHandler() {
             if (!didScroll) {
                 didScroll = true;
